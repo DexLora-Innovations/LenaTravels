@@ -10,7 +10,7 @@ export function Footer() {
               <Flame className="h-5 w-5" />
             </span>
             <div>
-              <div className="font-display text-2xl">Sacred Trails Travels</div>
+              <div className="font-display text-2xl">Lena Travels</div>
               <div className="text-[10px] tracking-[0.3em] uppercase text-background/60">Kashi Yatra Specialists</div>
             </div>
           </div>
@@ -47,14 +47,14 @@ export function Footer() {
           <h4 className="text-xs tracking-[0.3em] uppercase text-accent">Reach Us</h4>
           <ul className="mt-6 space-y-3 text-background/75 text-sm">
             <li>+91 98765 43210</li>
-            <li>yatra@sacredtrails.in</li>
+            <li>yatra@lenatravels.in</li>
             <li>Varanasi, Uttar Pradesh<br />India — 221001</li>
           </ul>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-background/50">
-        <div>© {new Date().getFullYear()} Sacred Trails Travels. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} Lena Travels. All rights reserved.</div>
         <div className="tracking-[0.3em] uppercase">ॐ नमः शिवाय</div>
       </div>
     </footer>

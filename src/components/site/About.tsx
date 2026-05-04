@@ -14,7 +14,7 @@ export function About() {
         <SectionHeading
           eyebrow="About Us"
           title={<>Devoted to Your <em className="not-italic text-gradient-gold">Sacred Journey</em></>}
-          subtitle="With over 15 years of experience, Sacred Trails Travels specializes in spiritual journeys across Uttar Pradesh and beyond. We ensure a peaceful, well-managed pilgrimage — from train to temple."
+          subtitle="With over 15 years of experience, Lena Travels specializes in spiritual journeys across Uttar Pradesh and beyond. We ensure a peaceful, well-managed pilgrimage — from train to temple."
         />
 
         <div className="mt-20 grid md:grid-cols-3 gap-6">

@@ -10,7 +10,7 @@ export function Hero() {
         height={1080}
         className="absolute inset-0 h-full w-full object-cover scale-105"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/75" />
       <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-accent/30 blur-3xl animate-float" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-24 w-full">

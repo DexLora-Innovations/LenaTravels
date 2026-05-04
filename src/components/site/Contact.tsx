@@ -18,7 +18,7 @@ export function Contact() {
           <div className="lg:col-span-2 space-y-6">
             {[
               { icon: Phone, label: "Call Us", value: "+91 98765 43210" },
-              { icon: Mail, label: "Email", value: "yatra@sacredtrails.in" },
+              { icon: Mail, label: "Email", value: "yatra@lenatravels.in" },
               { icon: MapPin, label: "Office", value: "Varanasi, Uttar Pradesh, India" },
             ].map(({ icon: Icon, label, value }) => (
               <div
