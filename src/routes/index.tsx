@@ -1,26 +1,48 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Destinations } from "@/components/site/Destinations";
+import { PackageSection } from "@/components/site/Package";
+import { Services } from "@/components/site/Services";
+import { WhyUs } from "@/components/site/WhyUs";
+import { Gallery } from "@/components/site/Gallery";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { useReveal } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Sacred Trails Travels — Kashi Yatra Specialists" },
+      {
+        name: "description",
+        content:
+          "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages by train (9 days, ₹13,500) or flight (6 days).",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
+  useReveal();
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="bg-background text-foreground overflow-x-hidden">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Destinations />
+        <PackageSection />
+        <Services />
+        <WhyUs />
+        <Gallery />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
