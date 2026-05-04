@@ -38,7 +38,7 @@ export function Navbar() {
               Lena Travels
             </span>
             <span className={`block text-[10px] tracking-[0.3em] uppercase ${scrolled ? "text-muted-foreground" : "text-white/80"}`}>
-              Travels
+              Kashi Yatra Specialists
             </span>
           </span>
         </a>
