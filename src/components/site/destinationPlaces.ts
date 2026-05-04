@@ -1,7 +1,7 @@
 export type Place = { name: string; desc: string; img: string };
 
-const img = (q: string) =>
-  `https://source.unsplash.com/featured/800x600/?${encodeURIComponent(q)}`;
+const img = (seed: string) =>
+  `https://picsum.photos/seed/${encodeURIComponent(seed)}/800/600`;
 
 export const destinationPlaces: Record<string, { title: string; subtitle: string; places: Place[] }> = {
   kashi: {
