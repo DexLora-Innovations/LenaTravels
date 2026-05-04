@@ -35,7 +35,7 @@ export function Navbar() {
           </span>
           <span className="leading-tight">
             <span className={`block font-display text-xl font-semibold ${scrolled ? "text-foreground" : "text-white"}`}>
-              Sacred Trails
+              Lena Travels
             </span>
             <span className={`block text-[10px] tracking-[0.3em] uppercase ${scrolled ? "text-muted-foreground" : "text-white/80"}`}>
               Travels

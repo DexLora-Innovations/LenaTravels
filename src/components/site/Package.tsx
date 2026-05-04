@@ -107,7 +107,7 @@ export function PackageSection() {
 
         <div className="mt-12 reveal max-w-3xl mx-auto rounded-2xl border-2 border-dashed border-accent/50 bg-accent/5 p-8 text-center">
           <p className="font-display text-xl text-foreground italic">
-            “All arrangements including stay and food are completely managed by Sacred Trails Travels.”
+            “All arrangements including stay and food are completely managed by Lena Travels.”
           </p>
         </div>
       </div>

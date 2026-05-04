@@ -13,7 +13,7 @@ const reviews = [
     place: "Delhi",
   },
   {
-    text: "After 15 years of wanting to visit Prayagraj, Sacred Trails made it effortless. They treat pilgrims like family.",
+    text: "After 15 years of wanting to visit Prayagraj, Lena Travels made it effortless. They treat pilgrims like family.",
     name: "Sunita Devi",
     place: "Jaipur",
   },
