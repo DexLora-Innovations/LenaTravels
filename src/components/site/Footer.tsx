@@ -47,7 +47,7 @@ export function Footer() {
           <h4 className="text-xs tracking-[0.3em] uppercase text-accent">Reach Us</h4>
           <ul className="mt-6 space-y-3 text-background/75 text-sm">
             <li>+91 98765 43210</li>
-            <li>yatra@sacredtrails.in</li>
+            <li>yatra@lenatravels.in</li>
             <li>Varanasi, Uttar Pradesh<br />India — 221001</li>
           </ul>
         </div>
