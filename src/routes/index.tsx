@@ -7,6 +7,7 @@ import { PackageSection } from "@/components/site/Package";
 import { Services } from "@/components/site/Services";
 import { WhyUs } from "@/components/site/WhyUs";
 import { Gallery } from "@/components/site/Gallery";
+import { PilgrimMoments } from "@/components/site/PilgrimMoments";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
