@@ -40,6 +40,7 @@ function Index() {
         <Services />
         <WhyUs />
         <Gallery />
+        <PilgrimMoments />
         <Testimonials />
         <Contact />
       </main>
