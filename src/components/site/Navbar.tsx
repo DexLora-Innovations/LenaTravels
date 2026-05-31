@@ -1,19 +1,16 @@
 import { useEffect, useState } from "react";
 import { Flame, Menu, X } from "lucide-react";
-import { useLang } from "@/i18n/LanguageContext";
-import { LanguageSwitcher } from "./LanguageSwitcher";
+
+const links = [
+  { href: "#about", label: "About" },
+  { href: "#destinations", label: "Destinations" },
+  { href: "#package", label: "Package" },
+  { href: "#contact", label: "Contact" },
+];
 
 export function Navbar() {
-  const { t } = useLang();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-
-  const links = [
-    { href: "#about", label: t.nav.about },
-    { href: "#destinations", label: t.nav.destinations },
-    { href: "#package", label: t.nav.package },
-    { href: "#contact", label: t.nav.contact },
-  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30);
@@ -30,7 +27,7 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between gap-3">
+      <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3 group">
           <span className="relative flex h-11 w-11 items-center justify-center rounded-full bg-sunset text-primary-foreground shadow-glow">
             <Flame className="h-5 w-5" />
@@ -40,12 +37,12 @@ export function Navbar() {
               Lena Travels
             </span>
             <span className={`block text-[10px] tracking-[0.3em] uppercase ${scrolled ? "text-muted-foreground" : "text-white/80"}`}>
-              {t.nav.subtitle}
+              Kashi Yatra Specialists
             </span>
           </span>
         </a>
 
-        <ul className="hidden lg:flex items-center gap-8">
+        <ul className="hidden lg:flex items-center gap-10">
           {links.map((l) => (
             <li key={l.href}>
               <a
@@ -60,26 +57,20 @@ export function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden lg:flex items-center gap-4">
-          <LanguageSwitcher scrolled={scrolled} />
-          <a
-            href="#contact"
-            className="inline-flex items-center rounded-full bg-sunset px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-105"
-          >
-            {t.nav.book}
-          </a>
-        </div>
+        <a
+          href="#contact"
+          className="hidden lg:inline-flex items-center rounded-full bg-sunset px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-105"
+        >
+          Book Yatra
+        </a>
 
-        <div className="flex items-center gap-2 lg:hidden">
-          <LanguageSwitcher scrolled={scrolled} />
-          <button
-            onClick={() => setOpen((v) => !v)}
-            className={`p-2 rounded-md ${scrolled ? "text-foreground" : "text-white"}`}
-            aria-label="Toggle menu"
-          >
-            {open ? <X /> : <Menu />}
-          </button>
-        </div>
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className={`lg:hidden p-2 rounded-md ${scrolled ? "text-foreground" : "text-white"}`}
+          aria-label="Toggle menu"
+        >
+          {open ? <X /> : <Menu />}
+        </button>
       </nav>
 
       {open && (
@@ -101,7 +92,7 @@ export function Navbar() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex justify-center rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground"
             >
-              {t.nav.book}
+              Book Yatra
             </a>
           </ul>
         </div>

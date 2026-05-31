@@ -1,10 +1,6 @@
 import { Flame, Facebook, Instagram, Youtube, Twitter } from "lucide-react";
-import { useLang } from "@/i18n/LanguageContext";
-
-const hrefs = ["#about", "#destinations", "#package", "#contact"];
 
 export function Footer() {
-  const { t } = useLang();
   return (
     <footer className="bg-foreground text-background pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-4 gap-12">
@@ -15,10 +11,12 @@ export function Footer() {
             </span>
             <div>
               <div className="font-display text-2xl">Lena Travels</div>
-              <div className="text-[10px] tracking-[0.3em] uppercase text-background/60">{t.nav.subtitle}</div>
+              <div className="text-[10px] tracking-[0.3em] uppercase text-background/60">Kashi Yatra Specialists</div>
             </div>
           </div>
-          <p className="mt-6 max-w-md text-background/70 leading-relaxed">{t.footer.tagline}</p>
+          <p className="mt-6 max-w-md text-background/70 leading-relaxed">
+            Guiding pilgrims to the sacred soul of India for over 15 years. Specialists in spiritual journeys to Kashi, Gaya, Buddha Gaya & Prayagraj.
+          </p>
           <div className="mt-6 flex gap-3">
             {[Facebook, Instagram, Youtube, Twitter].map((Icon, i) => (
               <a
@@ -33,11 +31,11 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-xs tracking-[0.3em] uppercase text-accent">{t.footer.quickLinks}</h4>
+          <h4 className="text-xs tracking-[0.3em] uppercase text-accent">Quick Links</h4>
           <ul className="mt-6 space-y-3 text-background/75">
-            {t.footer.links.map((l, i) => (
+            {["About", "Destinations", "Package", "Gallery", "Contact"].map((l) => (
               <li key={l}>
-                <a href={hrefs[i]} className="hover:text-accent transition-colors">
+                <a href={`#${l.toLowerCase()}`} className="hover:text-accent transition-colors">
                   {l}
                 </a>
               </li>
@@ -46,11 +44,11 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-xs tracking-[0.3em] uppercase text-accent">{t.footer.reach}</h4>
+          <h4 className="text-xs tracking-[0.3em] uppercase text-accent">Reach Us</h4>
           <ul className="mt-6 space-y-3 text-background/75 text-sm">
             <li>+91 98765 43210</li>
             <li>yatra@lenatravels.in</li>
-            <li>{t.contact.officeVal}<br />221001</li>
+            <li>Varanasi, Uttar Pradesh<br />India — 221001</li>
           </ul>
         </div>
       </div>

@@ -1,21 +1,20 @@
 import { Award, Users, ShieldCheck } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
-import { useLang } from "@/i18n/LanguageContext";
+
+const stats = [
+  { icon: Award, n: "15+", l: "Years of Experience" },
+  { icon: Users, n: "1000+", l: "Happy Pilgrims" },
+  { icon: ShieldCheck, n: "100%", l: "Fully Managed Tours" },
+];
 
 export function About() {
-  const { t } = useLang();
-  const stats = [
-    { icon: Award, n: "15+", l: t.about.s1 },
-    { icon: Users, n: "1000+", l: t.about.s2 },
-    { icon: ShieldCheck, n: "100%", l: t.about.s3 },
-  ];
   return (
     <section id="about" className="py-28 bg-divine">
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <SectionHeading
-          eyebrow={t.about.eyebrow}
-          title={<>{t.about.title1} <em className="not-italic text-gradient-gold">{t.about.title2}</em></>}
-          subtitle={t.about.subtitle}
+          eyebrow="About Us"
+          title={<>Devoted to Your <em className="not-italic text-gradient-gold">Sacred Journey</em></>}
+          subtitle="With over 15 years of experience, Lena Travels specializes in spiritual journeys across Uttar Pradesh and beyond. We ensure a peaceful, well-managed pilgrimage — from train to temple."
         />
 
         <div className="mt-20 grid md:grid-cols-3 gap-6">

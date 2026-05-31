@@ -10,7 +10,6 @@ import { PilgrimMoments } from "@/components/site/PilgrimMoments";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
-import { LanguageProvider } from "@/i18n/LanguageContext";
 import { useReveal } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/")({
@@ -30,22 +29,20 @@ export const Route = createFileRoute("/")({
 function Index() {
   useReveal();
   return (
-    <LanguageProvider>
-      <div className="bg-background text-foreground overflow-x-hidden">
-        <Navbar />
-        <main>
-          <Hero />
-          <About />
-          <Destinations />
-          <PackageSection />
-          <Services />
-          <WhyUs />
-          <PilgrimMoments />
-          <Testimonials />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </LanguageProvider>
+    <div className="bg-background text-foreground overflow-x-hidden">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Destinations />
+        <PackageSection />
+        <Services />
+        <WhyUs />
+        <PilgrimMoments />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }

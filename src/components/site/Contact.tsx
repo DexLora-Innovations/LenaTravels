@@ -1,30 +1,26 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 import { SectionHeading } from "./SectionHeading";
-import { useLang } from "@/i18n/LanguageContext";
 
 export function Contact() {
-  const { t } = useLang();
   const [sent, setSent] = useState(false);
-
-  const info = [
-    { icon: Phone, label: t.contact.call, value: "+91 98765 43210" },
-    { icon: Mail, label: t.contact.email, value: "yatra@lenatravels.in" },
-    { icon: MapPin, label: t.contact.office, value: t.contact.officeVal },
-  ];
 
   return (
     <section id="contact" className="py-28 bg-divine">
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <SectionHeading
-          eyebrow={t.contact.eyebrow}
-          title={<>{t.contact.title1} <em className="not-italic text-gradient-gold">{t.contact.title2}</em></>}
-          subtitle={t.contact.subtitle}
+          eyebrow="Contact Us"
+          title={<>Begin Your <em className="not-italic text-gradient-gold">Yatra</em></>}
+          subtitle="Tell us about your pilgrimage dream. We'll craft a soulful journey for you."
         />
 
         <div className="mt-20 grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2 space-y-6">
-            {info.map(({ icon: Icon, label, value }) => (
+            {[
+              { icon: Phone, label: "Call Us", value: "+91 98765 43210" },
+              { icon: Mail, label: "Email", value: "yatra@lenatravels.in" },
+              { icon: MapPin, label: "Office", value: "Varanasi, Uttar Pradesh, India" },
+            ].map(({ icon: Icon, label, value }) => (
               <div
                 key={label}
                 className="reveal flex items-start gap-4 p-6 rounded-2xl bg-card border border-border hover-lift"
@@ -48,30 +44,33 @@ export function Contact() {
             className="reveal lg:col-span-3 bg-card rounded-2xl p-8 border border-border shadow-soft space-y-5"
           >
             <div className="grid sm:grid-cols-2 gap-5">
-              <Field label={t.contact.name} name="name" />
-              <Field label={t.contact.phone} name="phone" type="tel" />
+              <Field label="Name" name="name" />
+              <Field label="Phone" name="phone" type="tel" />
             </div>
             <div>
-              <label className="text-xs uppercase tracking-widest text-muted-foreground">{t.contact.interest}</label>
+              <label className="text-xs uppercase tracking-widest text-muted-foreground">Package Interest</label>
               <select className="mt-2 w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:border-accent focus:outline-none transition-colors">
-                {t.contact.options.map((o) => (
-                  <option key={o}>{o}</option>
-                ))}
+                <option>Kashi Yatra — Train (9 days)</option>
+                <option>Kashi Yatra — Flight (6 days)</option>
+                <option>Gaya Pilgrimage</option>
+                <option>Buddha Gaya Tour</option>
+                <option>Prayagraj Snan</option>
+                <option>Custom Itinerary</option>
               </select>
             </div>
             <div>
-              <label className="text-xs uppercase tracking-widest text-muted-foreground">{t.contact.message}</label>
+              <label className="text-xs uppercase tracking-widest text-muted-foreground">Message</label>
               <textarea
                 rows={4}
                 className="mt-2 w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:border-accent focus:outline-none transition-colors resize-none"
-                placeholder={t.contact.placeholder}
+                placeholder="Tell us about your travel dates and group size..."
               />
             </div>
             <button
               type="submit"
               className="w-full rounded-full bg-sunset px-8 py-4 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.02]"
             >
-              {sent ? t.contact.sent : t.contact.send}
+              {sent ? "✓ We'll be in touch soon" : "Send Inquiry"}
             </button>
           </form>
         </div>
