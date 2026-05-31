@@ -1,34 +1,18 @@
 import { Quote, Star } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
-
-const reviews = [
-  {
-    text: "Very well organized trip — everything was taken care of from boarding the train to the final aarti. Truly a divine experience.",
-    name: "Anjali Sharma",
-    place: "Lucknow",
-  },
-  {
-    text: "The best experience visiting Kashi with this travel service. Knowledgeable guides, clean stay, and pure sattvic meals.",
-    name: "Ramesh Gupta",
-    place: "Delhi",
-  },
-  {
-    text: "After 15 years of wanting to visit Prayagraj, Lena Travels made it effortless. They treat pilgrims like family.",
-    name: "Sunita Devi",
-    place: "Jaipur",
-  },
-];
+import { useLang } from "@/i18n/LanguageContext";
 
 export function Testimonials() {
+  const { t } = useLang();
   return (
     <section className="py-28 bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeading
-          eyebrow="Testimonials"
-          title={<>Words from our <em className="not-italic text-gradient-gold">Pilgrims</em></>}
+          eyebrow={t.testimonials.eyebrow}
+          title={<>{t.testimonials.title1} <em className="not-italic text-gradient-gold">{t.testimonials.title2}</em></>}
         />
         <div className="mt-20 grid md:grid-cols-3 gap-6">
-          {reviews.map((r, i) => (
+          {t.testimonials.reviews.map((r, i) => (
             <figure
               key={r.name}
               className="reveal hover-lift relative bg-card rounded-2xl p-8 border border-border shadow-soft"

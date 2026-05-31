@@ -6,40 +6,33 @@ import prayagraj from "@/assets/dest-prayagraj.jpg";
 import ayodhya from "@/assets/dest-ayodhya.jpg";
 import { SectionHeading } from "./SectionHeading";
 import { ExploreModal } from "./ExploreModal";
-import { destinationPlaces } from "./destinationPlaces";
+import { useLang } from "@/i18n/LanguageContext";
 
-type DestKey = keyof typeof destinationPlaces;
-
-const cards: { key: DestKey; img: string; title: string; subtitle: string; desc: string }[] = [
-  { key: "kashi", img: kashi, title: "Kashi", subtitle: "Varanasi", desc: "The eternal city of Lord Shiva — ghats, aarti, and moksha." },
-  { key: "gaya", img: gaya, title: "Gaya", subtitle: "Bihar", desc: "Sacred land of Vishnupad — perform pind daan for ancestors." },
-  { key: "bodhgaya", img: bodhgaya, title: "Buddha Gaya", subtitle: "Bodh Gaya", desc: "Where Lord Buddha attained enlightenment beneath the Bodhi tree." },
-  { key: "prayagraj", img: prayagraj, title: "Prayagraj", subtitle: "Allahabad", desc: "Triveni Sangam — the holy confluence of three sacred rivers." },
-  { key: "ayodhya", img: ayodhya, title: "Ayodhya", subtitle: "Uttar Pradesh", desc: "Birthplace of Lord Rama — home to the magnificent Ram Mandir." },
-];
+const imgMap: Record<string, string> = { kashi, gaya, bodhgaya, prayagraj, ayodhya };
 
 export function Destinations() {
-  const [active, setActive] = useState<DestKey | null>(null);
+  const { t } = useLang();
+  const [active, setActive] = useState<string | null>(null);
 
   return (
     <section id="destinations" className="py-28 bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeading
-          eyebrow="Holy Destinations"
-          title={<>Where <em className="not-italic text-gradient-gold">Souls</em> Find Peace</>}
-          subtitle="Curated pilgrimages to the four most sacred cities of North India."
+          eyebrow={t.destinations.eyebrow}
+          title={<>{t.destinations.title1} <em className="not-italic text-gradient-gold">{t.destinations.title2}</em> {t.destinations.title3}</>}
+          subtitle={t.destinations.subtitle}
         />
 
         <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cards.map((c, i) => (
+          {t.destinations.cards.map((c, i) => (
             <article
-              key={c.title}
+              key={c.key}
               className="reveal group relative overflow-hidden rounded-2xl bg-card shadow-soft hover-lift"
               style={{ transitionDelay: `${i * 80}ms` }}
             >
               <div className="aspect-[3/4] overflow-hidden">
                 <img
-                  src={c.img}
+                  src={imgMap[c.key]}
                   alt={c.title}
                   loading="lazy"
                   width={1024}
@@ -58,7 +51,7 @@ export function Destinations() {
                   onClick={() => setActive(c.key)}
                   className="mt-4 inline-flex items-center gap-2 rounded-full bg-accent/95 px-5 py-2 text-xs font-semibold tracking-wider uppercase text-accent-foreground shadow-glow hover:bg-accent transition-all hover:gap-3"
                 >
-                  Explore →
+                  {t.destinations.explore}
                 </button>
               </div>
             </article>
@@ -70,4 +63,3 @@ export function Destinations() {
     </section>
   );
 }
-
