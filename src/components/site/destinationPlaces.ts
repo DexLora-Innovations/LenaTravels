@@ -68,4 +68,20 @@ export const destinationPlaces: Record<string, { title: string; subtitle: string
       { name: "Kumbh Mela Grounds", desc: "Vast sacred grounds that host the world's largest spiritual gathering.", img: img("kumbh mela prayagraj") },
     ],
   },
+  ayodhya: {
+    title: "Ayodhya",
+    subtitle: "Top 10 Sacred Places in Ayodhya",
+    places: [
+      { name: "Ram Mandir", desc: "The grand temple marking the birthplace of Lord Rama — Ayodhya's spiritual heart.", img: img("ram mandir ayodhya") },
+      { name: "Hanuman Garhi", desc: "Hilltop temple of Lord Hanuman, guardian deity of Ayodhya, reached by 76 steps.", img: img("hanuman garhi ayodhya") },
+      { name: "Kanak Bhawan", desc: "Beautiful temple gifted to Sita, adorned with gold-crowned idols of Ram and Sita.", img: img("kanak bhawan ayodhya") },
+      { name: "Nageshwarnath Temple", desc: "Ancient Shiva temple believed to be established by Kush, son of Lord Rama.", img: img("nageshwarnath temple ayodhya") },
+      { name: "Ram Ki Paidi", desc: "Series of ghats on the Saryu river, glowing beautifully during evening aarti.", img: img("ram ki paidi saryu ayodhya") },
+      { name: "Saryu River", desc: "The holy river of Ayodhya where pilgrims take a sacred dip and offer prayers.", img: img("saryu river ayodhya") },
+      { name: "Treta Ke Thakur", desc: "Ancient temple housing idols said to date back to the time of Lord Rama.", img: img("treta ke thakur ayodhya") },
+      { name: "Dashrath Mahal", desc: "Royal residence of King Dashrath, father of Lord Rama, now a serene temple.", img: img("dashrath mahal ayodhya") },
+      { name: "Guptar Ghat", desc: "Tranquil riverside ghat where Lord Rama is believed to have taken jal samadhi.", img: img("guptar ghat ayodhya") },
+      { name: "Bharat Kund", desc: "Sacred tank where Bharat performed penance awaiting Lord Rama's return.", img: img("bharat kund ayodhya") },
+    ],
+  },
 };
