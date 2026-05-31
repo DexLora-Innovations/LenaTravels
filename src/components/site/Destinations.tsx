@@ -3,6 +3,7 @@ import kashi from "@/assets/dest-kashi.jpg";
 import gaya from "@/assets/dest-gaya.jpg";
 import bodhgaya from "@/assets/dest-bodhgaya.jpg";
 import prayagraj from "@/assets/dest-prayagraj.jpg";
+import ayodhya from "@/assets/dest-ayodhya.jpg";
 import { SectionHeading } from "./SectionHeading";
 import { ExploreModal } from "./ExploreModal";
 import { destinationPlaces } from "./destinationPlaces";
@@ -14,6 +15,7 @@ const cards: { key: DestKey; img: string; title: string; subtitle: string; desc:
   { key: "gaya", img: gaya, title: "Gaya", subtitle: "Bihar", desc: "Sacred land of Vishnupad — perform pind daan for ancestors." },
   { key: "bodhgaya", img: bodhgaya, title: "Buddha Gaya", subtitle: "Bodh Gaya", desc: "Where Lord Buddha attained enlightenment beneath the Bodhi tree." },
   { key: "prayagraj", img: prayagraj, title: "Prayagraj", subtitle: "Allahabad", desc: "Triveni Sangam — the holy confluence of three sacred rivers." },
+  { key: "ayodhya", img: ayodhya, title: "Ayodhya", subtitle: "Uttar Pradesh", desc: "Birthplace of Lord Rama — home to the magnificent Ram Mandir." },
 ];
 
 export function Destinations() {
