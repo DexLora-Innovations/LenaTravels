@@ -5,6 +5,7 @@ import g4 from "@/assets/gallery-4.jpg";
 import hero from "@/assets/hero-aarti.jpg";
 import kashi from "@/assets/dest-kashi.jpg";
 import { SectionHeading } from "./SectionHeading";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const items = [
   { src: g3, label: "Sadhu of the Ghats", span: "row-span-2" },
@@ -16,25 +17,27 @@ const items = [
 ];
 
 export function Gallery() {
+  const { t } = useLanguage();
+
   return (
-    <section id="gallery" className="py-28 bg-divine">
+    <section id="gallery" className="py-28 bg-divine overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeading
-          eyebrow="Gallery"
+          eyebrow={t("gallery.eyebrow")}
           title={<>Glimpses of the <em className="not-italic text-gradient-gold">Sacred</em></>}
-          subtitle="Moments captured from our pilgrimages across the holy cities."
+          subtitle={t("gallery.subtitle")}
         />
 
         <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 auto-rows-[220px] gap-4">
           {items.map((it, i) => (
             <figure
               key={i}
-              className={`reveal group relative overflow-hidden rounded-2xl shadow-soft ${it.span}`}
+              className={`reveal group relative overflow-hidden rounded-2xl shadow-soft h-full ${it.span}`}
               style={{ transitionDelay: `${i * 60}ms` }}
             >
               <img
                 src={it.src}
-                alt={it.label}
+                alt={t("gallery.alt_" + i)}
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-125"
               />

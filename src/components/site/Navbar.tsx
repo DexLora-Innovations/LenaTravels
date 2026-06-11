@@ -1,16 +1,25 @@
 import { useEffect, useState } from "react";
-import { Flame, Menu, X } from "lucide-react";
+import { Flame, Menu, X, Globe } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#destinations", label: "Destinations" },
-  { href: "#package", label: "Package" },
-  { href: "#contact", label: "Contact" },
+  { href: "#about", key: "nav.about" },
+  { href: "#destinations", key: "nav.destinations" },
+  { href: "#package", key: "nav.package" },
+  { href: "#contact", key: "nav.contact" },
 ];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 30);
@@ -21,7 +30,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 overflow-x-hidden ${
         scrolled
           ? "bg-background/85 backdrop-blur-xl border-b border-border shadow-soft"
           : "bg-transparent"
@@ -37,7 +46,7 @@ export function Navbar() {
               Lena Travels
             </span>
             <span className={`block text-[10px] tracking-[0.3em] uppercase ${scrolled ? "text-muted-foreground" : "text-white/80"}`}>
-              Kashi Yatra Specialists
+              {t("nav.subtitle")}
             </span>
           </span>
         </a>
@@ -51,18 +60,31 @@ export function Navbar() {
                   scrolled ? "text-foreground/80" : "text-white/90"
                 }`}
               >
-                {l.label}
+                {t(l.key)}
               </a>
             </li>
           ))}
         </ul>
 
-        <a
-          href="#contact"
-          className="hidden lg:inline-flex items-center rounded-full bg-sunset px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-105"
-        >
-          Book Yatra
-        </a>
+        <div className="hidden lg:flex items-center gap-3">
+          <Select value={language} onValueChange={(value) => setLanguage(value as any)}>
+            <SelectTrigger className="w-[120px] h-9 text-sm">
+              <Globe className="h-4 w-4 mr-2" />
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="en">English</SelectItem>
+              <SelectItem value="ta">தமிழ்</SelectItem>
+              <SelectItem value="hi">हिंदी</SelectItem>
+            </SelectContent>
+          </Select>
+          <a
+            href="#contact"
+            className="inline-flex items-center rounded-full bg-sunset px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-105"
+          >
+            {t("nav.book_yatra")}
+          </a>
+        </div>
 
         <button
           onClick={() => setOpen((v) => !v)}
@@ -83,16 +105,29 @@ export function Navbar() {
                   onClick={() => setOpen(false)}
                   className="block text-foreground/90 font-medium"
                 >
-                  {l.label}
+                  {t(l.key)}
                 </a>
               </li>
             ))}
+            <div className="flex items-center gap-3 mt-2">
+              <Select value={language} onValueChange={(value) => setLanguage(value as any)}>
+                <SelectTrigger className="w-[120px] h-9 text-sm">
+                  <Globe className="h-4 w-4 mr-2" />
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="en">English</SelectItem>
+                  <SelectItem value="ta">தமிழ்</SelectItem>
+                  <SelectItem value="hi">हिंदी</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
             <a
               href="#contact"
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex justify-center rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground"
             >
-              Book Yatra
+              {t("nav.book_yatra")}
             </a>
           </ul>
         </div>

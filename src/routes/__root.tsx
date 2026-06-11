@@ -1,6 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { LanguageProvider } from "../contexts/LanguageContext";
 
 function NotFoundComponent() {
   return (
@@ -29,18 +30,15 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Sacred Paths Project is a spiritual travel website showcasing Uttar Pradesh pilgrimage destinations." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Sacred Paths Project is a spiritual travel website showcasing Uttar Pradesh pilgrimage destinations." },
+      { title: "Lena Travels — Kashi Yatra Specialists" },
+      { name: "description", content: "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages." },
+      { name: "author", content: "Lena Travels" },
+      { property: "og:title", content: "Lena Travels — Kashi Yatra Specialists" },
+      { property: "og:description", content: "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Sacred Paths Project is a spiritual travel website showcasing Uttar Pradesh pilgrimage destinations." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2ec0840f-e81c-488a-83cb-12872a6b7736/id-preview-636455e8--e182a024-4fd9-4ab9-8d56-af2a047936ea.lovable.app-1780204601830.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2ec0840f-e81c-488a-83cb-12872a6b7736/id-preview-636455e8--e182a024-4fd9-4ab9-8d56-af2a047936ea.lovable.app-1780204601830.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Lena Travels — Kashi Yatra Specialists" },
+      { name: "twitter:description", content: "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages." },
     ],
     links: [
       {
@@ -61,7 +59,9 @@ function RootShell({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
         <Scripts />
       </body>
     </html>

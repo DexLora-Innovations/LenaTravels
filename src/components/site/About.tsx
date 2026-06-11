@@ -1,26 +1,29 @@
 import { Award, Users, ShieldCheck } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const stats = [
-  { icon: Award, n: "15+", l: "Years of Experience" },
-  { icon: Users, n: "1000+", l: "Happy Pilgrims" },
-  { icon: ShieldCheck, n: "100%", l: "Fully Managed Tours" },
+  { icon: Award, n: "15+", lKey: "about.years_exp" },
+  { icon: Users, n: "1000+", lKey: "about.happy_pilgrims" },
+  { icon: ShieldCheck, n: "100%", lKey: "about.managed_tours" },
 ];
 
 export function About() {
+  const { t } = useLanguage();
+
   return (
-    <section id="about" className="py-28 bg-divine">
+    <section id="about" className="py-28 bg-divine overflow-x-hidden">
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <SectionHeading
-          eyebrow="About Us"
+          eyebrow={t("about.eyebrow")}
           title={<>Devoted to Your <em className="not-italic text-gradient-gold">Sacred Journey</em></>}
-          subtitle="With over 15 years of experience, Lena Travels specializes in spiritual journeys across Uttar Pradesh and beyond. We ensure a peaceful, well-managed pilgrimage — from train to temple."
+          subtitle={t("about.subtitle")}
         />
 
         <div className="mt-20 grid md:grid-cols-3 gap-6">
-          {stats.map(({ icon: Icon, n, l }, i) => (
+          {stats.map(({ icon: Icon, n, lKey }, i) => (
             <div
-              key={l}
+              key={lKey}
               className="reveal hover-lift bg-card rounded-2xl p-8 text-center border border-border shadow-soft"
               style={{ transitionDelay: `${i * 100}ms` }}
             >
@@ -28,7 +31,7 @@ export function About() {
                 <Icon className="h-6 w-6" />
               </div>
               <div className="mt-6 font-display text-4xl text-foreground">{n}</div>
-              <div className="mt-2 text-sm uppercase tracking-widest text-muted-foreground">{l}</div>
+              <div className="mt-2 text-sm uppercase tracking-widest text-muted-foreground">{t(lKey)}</div>
             </div>
           ))}
         </div>
