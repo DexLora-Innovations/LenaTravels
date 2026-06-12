@@ -1,11 +1,7 @@
-// Minimal Vercel Node serverless wrapper to forward requests to
-// the TanStack Start server bundle at dist/server/server.js
-// Keeps SSR behavior intact and provides a reliable Vercel function
+import server from '../dist/server/server.js';
 
-module.exports = async function (req, res) {
+export default async function handler(req, res) {
   try {
-    const { default: server } = await import('../dist/server/server.js');
-
     const host = req.headers.host || 'localhost';
     const url = `https://${host}${req.url}`;
 
@@ -44,4 +40,4 @@ module.exports = async function (req, res) {
     res.statusCode = 500;
     res.end('Internal Server Error');
   }
-};
+}
