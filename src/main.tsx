@@ -1,17 +1,17 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { RouterProvider } from '@tanstack/react-router'
-import { getRouter } from './router'
+import { BrowserRouter } from 'react-router-dom'
+import App from './App'
 
-async function bootstrap() {
-  const router = getRouter()
-
+function bootstrap() {
   const root = document.getElementById('root')
   if (!root) return
 
   createRoot(root).render(
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   )
 }

@@ -1,14 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+// removed tanstackStart plugin for SPA migration
 import tailwindcss from "@tailwindcss/vite";
 import viteTsconfigPaths from "vite-tsconfig-paths";
 import path from "path";
 
 export default defineConfig({
   plugins: [
-    tanstackStart(),
-    // react plugin must come after tanstackStart
+    // react plugin
     react(),
     tailwindcss(),
     viteTsconfigPaths(),
