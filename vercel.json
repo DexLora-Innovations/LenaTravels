@@ -9,5 +9,10 @@
     { "src": "/favicon.ico", "dest": "/dist/client/favicon.ico" },
     { "src": "/favicon.svg", "dest": "/dist/client/favicon.svg" },
     { "src": "^/(.*)$", "dest": "/api/ssr.js" }
-  ]
+  ],
+  "functions": {
+    "api/ssr.js": {
+      "includeFiles": "dist/server/**"
+    }
+  }
 }
