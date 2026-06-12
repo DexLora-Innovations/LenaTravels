@@ -4,6 +4,13 @@
     { "src": "dist/server/server.js", "use": "@vercel/node" },
     { "src": "dist/client/**", "use": "@vercel/static" }
   ],
+  "functions": {
+    "dist/server/server.js": {
+      "runtime": "nodejs18.x",
+      "maxDuration": 10,
+      "memory": 1024
+    }
+  },
   "routes": [
     { "src": "^/(.*)$", "dest": "/dist/server/server.js" }
   ]
