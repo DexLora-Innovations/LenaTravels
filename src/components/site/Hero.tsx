@@ -5,7 +5,10 @@ export function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section id="top" className="relative min-h-screen flex items-center overflow-hidden overflow-x-hidden">
+    <section
+      id="top"
+      className="relative min-h-screen flex items-center overflow-hidden overflow-x-hidden"
+    >
       <img
         src={hero}
         alt="Ganga Aarti at Kashi"
@@ -18,22 +21,35 @@ export function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-32 pb-24 w-full">
         <div className="max-w-3xl text-white">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 backdrop-blur px-4 py-1.5 text-xs tracking-[0.25em] uppercase text-white/90 animate-fade-in">
+          {/*
+           * Badge: allow it to wrap naturally on small screens so Tamil/Hindi
+           * text never overflows. Use break-words and a max-w cap.
+           */}
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 backdrop-blur px-4 py-1.5 text-xs tracking-[0.15em] uppercase text-white/90 animate-fade-in break-words max-w-full">
             {t("hero.badge")}
           </span>
+
+          {/*
+           * Hero h1: lang-heading-hero applies language-aware clamped sizes.
+           * English: up to 72px, Tamil: up to 56px, Hindi: up to 60px.
+           * word-break prevents any single long Tamil/Hindi word from
+           * triggering horizontal overflow at 320 px.
+           */}
           <h1
-            className="mt-8 font-display text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[1.05]"
+            className="mt-8 font-display font-semibold leading-tight lang-heading-hero break-words"
             style={{ animation: "fade-up 1s ease-out both" }}
           >
             {t("hero.title1")}
             <span className="block text-gradient-gold">{t("hero.title2")}</span>
           </h1>
+
           <p
-            className="mt-6 max-w-xl text-lg text-white/85"
+            className="mt-6 max-w-xl text-base sm:text-lg text-white/85 leading-relaxed"
             style={{ animation: "fade-up 1.2s .2s ease-out both" }}
           >
             {t("hero.description")}
           </p>
+
           <div
             className="mt-10 flex flex-wrap gap-4"
             style={{ animation: "fade-up 1.4s .4s ease-out both" }}
@@ -52,15 +68,17 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-16 grid grid-cols-3 gap-8 max-w-lg">
+          <div className="mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-lg">
             {[
               ["15+", "hero.years"],
               ["1000+", "hero.pilgrims"],
               ["5", "hero.holy_cities"],
             ].map(([n, l]) => (
               <div key={l} className="reveal">
-                <div className="font-display text-3xl text-accent">{n}</div>
-                <div className="text-xs uppercase tracking-widest text-white/70 mt-1">{t(l)}</div>
+                <div className="font-display text-2xl sm:text-3xl text-accent">{n}</div>
+                <div className="text-[10px] sm:text-xs uppercase tracking-widest text-white/70 mt-1 leading-snug">
+                  {t(l)}
+                </div>
               </div>
             ))}
           </div>

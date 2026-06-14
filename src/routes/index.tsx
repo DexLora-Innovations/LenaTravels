@@ -24,9 +24,17 @@ export const Route = createFileRoute("/")({
         content:
           "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages by train (9 days, ₹13,500) or flight (6 days).",
       },
-      { name: "keywords", content: "Kashi Yatra, Varanasi pilgrimage, Gaya pilgrimage, Prayagraj, Buddha Gaya, spiritual travel, Kashi Vishwanath, Ganga Aarti" },
+      {
+        name: "keywords",
+        content:
+          "Kashi Yatra, Varanasi pilgrimage, Gaya pilgrimage, Prayagraj, Buddha Gaya, spiritual travel, Kashi Vishwanath, Ganga Aarti",
+      },
       { property: "og:title", content: "Lena Travels — Kashi Yatra Specialists" },
-      { property: "og:description", content: "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages." },
+      {
+        property: "og:description",
+        content:
+          "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages.",
+      },
       { property: "og:type", content: "website" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],
@@ -36,13 +44,16 @@ export const Route = createFileRoute("/")({
 function Index() {
   useReveal();
   useEffect(() => {
+    // Prevent browser from restoring scroll position on back/forward navigation
+    // or on revisit. We always want the page to open at the top (Hero section).
     try {
-      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
     } catch (e) {
       /* ignore */
     }
+    // Immediately reset scroll position — runs synchronously before paint
     try {
-      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     } catch (e) {
       try {
         window.scrollTo(0, 0);
@@ -50,6 +61,15 @@ function Index() {
         /* ignore */
       }
     }
+    // Belt-and-suspenders: also reset after the splash screen has removed itself
+    const t = window.setTimeout(() => {
+      try {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      } catch {
+        /* ignore */
+      }
+    }, 3100);
+    return () => window.clearTimeout(t);
   }, []);
   return (
     <div className="bg-background text-foreground overflow-x-hidden">

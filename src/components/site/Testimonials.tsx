@@ -27,7 +27,11 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("testimonials.eyebrow")}
-          title={<>Words from our <em className="not-italic text-gradient-gold">Pilgrims</em></>}
+          title={
+            <>
+              Words from our <em className="not-italic text-gradient-gold">Pilgrims</em>
+            </>
+          }
         />
         <div className="mt-20 grid md:grid-cols-3 gap-6">
           {reviews.map((r, i) => (
@@ -42,10 +46,14 @@ export function Testimonials() {
                   <Star key={j} className="h-4 w-4 fill-current" />
                 ))}
               </div>
-              <blockquote className="mt-4 text-foreground leading-relaxed">"{t(r.text)}"</blockquote>
+              <blockquote className="mt-4 text-foreground leading-relaxed">
+                "{t(r.text)}"
+              </blockquote>
               <figcaption className="mt-6 pt-6 border-t border-border">
                 <div className="font-display text-lg text-foreground">{r.name}</div>
-                <div className="text-xs uppercase tracking-widest text-muted-foreground">{r.place}</div>
+                <div className="text-xs uppercase tracking-widest text-muted-foreground">
+                  {r.place}
+                </div>
               </figcaption>
             </figure>
           ))}

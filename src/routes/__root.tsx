@@ -1,7 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
-import { LanguageProvider } from "../contexts/LanguageContext";
+import { LanguageProvider, useLanguage } from "../contexts/LanguageContext";
 
 function NotFoundComponent() {
   return (
@@ -31,14 +31,26 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Lena Travels — Kashi Yatra Specialists" },
-      { name: "description", content: "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages." },
+      {
+        name: "description",
+        content:
+          "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages.",
+      },
       { name: "author", content: "Lena Travels" },
       { property: "og:title", content: "Lena Travels — Kashi Yatra Specialists" },
-      { property: "og:description", content: "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages." },
+      {
+        property: "og:description",
+        content:
+          "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Lena Travels — Kashi Yatra Specialists" },
-      { name: "twitter:description", content: "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages." },
+      {
+        name: "twitter:description",
+        content:
+          "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages.",
+      },
     ],
     links: [
       {
@@ -61,6 +73,22 @@ export const Route = createRootRoute({
   notFoundComponent: NotFoundComponent,
 });
 
+/**
+ * LangSync — keeps the <html lang> and data-lang attributes in sync with the
+ * active language so that language-aware CSS selectors ([data-lang="ta"] etc.)
+ * apply correctly throughout the document.
+ */
+function LangSync() {
+  const { language } = useLanguage();
+
+  if (typeof document !== "undefined") {
+    document.documentElement.setAttribute("lang", language);
+    document.documentElement.setAttribute("data-lang", language);
+  }
+
+  return null;
+}
+
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -69,6 +97,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <LanguageProvider>
+          <LangSync />
           {children}
         </LanguageProvider>
         <Scripts />

@@ -58,7 +58,10 @@ export const getRouter = () => {
   const router = createRouter({
     routeTree,
     context: {},
-    scrollRestoration: true,
+    // Disabled: TanStack scroll restoration was causing the page to re-open
+    // at the last-visited section on every revisit. We handle scroll reset
+    // manually in the Index component so the site always opens at the top.
+    scrollRestoration: false,
     defaultPreloadStaleTime: 0,
     defaultErrorComponent: DefaultErrorComponent,
   });

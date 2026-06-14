@@ -37,7 +37,11 @@ export function WhyUs() {
         <div>
           <SectionHeading
             eyebrow={t("whyus.eyebrow")}
-            title={<>The Difference of <em className="not-italic text-gradient-gold">Devotion</em></>}
+            title={
+              <>
+                The Difference of <em className="not-italic text-gradient-gold">Devotion</em>
+              </>
+            }
           />
           <ul className="mt-12 space-y-4">
             {reasons.map((r, i) => (

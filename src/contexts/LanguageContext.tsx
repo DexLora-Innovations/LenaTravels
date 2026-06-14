@@ -21,25 +21,28 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.contact": "Contact",
     "nav.book_yatra": "Book Yatra",
     "nav.subtitle": "Kashi Yatra Specialists",
-    
+
     // Hero
     "hero.title": "Sacred Journeys",
     "hero.subtitle": "to the Heart of India",
-    "hero.description": "Experience divine bliss with our expertly curated pilgrimage packages to Kashi, Gaya, Prayagraj & Ayodhya.",
+    "hero.description":
+      "Experience divine bliss with our expertly curated pilgrimage packages to Kashi, Gaya, Prayagraj & Ayodhya.",
     "hero.cta": "Begin Your Yatra",
-    
+
     // About
     "about.eyebrow": "About Us",
     "about.title": "15+ Years of Spiritual Service",
-    "about.subtitle": "Guiding pilgrims through the sacred paths of Kashi, Ayodhya, Gaya, Bodh Gaya and Prayagraj with devotion, comfort and trusted travel expertise.",
-    "about.description": "We are trusted Kashi Yatra specialists with deep knowledge of sacred destinations. Our team ensures every pilgrim experiences peace, comfort, and divine connection throughout their journey.",
-    
+    "about.subtitle":
+      "Guiding pilgrims through the sacred paths of Kashi, Ayodhya, Gaya, Bodh Gaya and Prayagraj with devotion, comfort and trusted travel expertise.",
+    "about.description":
+      "We are trusted Kashi Yatra specialists with deep knowledge of sacred destinations. Our team ensures every pilgrim experiences peace, comfort, and divine connection throughout their journey.",
+
     // Destinations
     "dest.eyebrow": "Holy Destinations",
     "dest.title": "Where Souls Find Peace",
     "dest.subtitle": "Curated pilgrimages to the four most sacred cities of North India.",
     "dest.explore": "Explore",
-    
+
     // Destination cards
     "dest.kashi.title": "Kashi",
     "dest.kashi.subtitle": "Varanasi",
@@ -56,14 +59,14 @@ const translations: Record<Language, Record<string, string>> = {
     "dest.ayodhya.title": "Ayodhya",
     "dest.ayodhya.subtitle": "Uttar Pradesh",
     "dest.ayodhya.desc": "Birthplace of Lord Rama — home to the magnificent Ram Mandir.",
-    
+
     // Explore Modal
     "modal.explore": "Explore",
     "modal.loading": "Loading sacred places...",
     "modal.close": "Close",
     "modal.itinerary": "View Itinerary",
     "modal.book": "Book This Yatra →",
-    
+
     // Gallery
     "gallery.eyebrow": "Gallery",
     "gallery.title": "Glimpses of the Sacred",
@@ -74,7 +77,7 @@ const translations: Record<Language, Record<string, string>> = {
     "gallery.alt_3": "Kashi Vishwanath",
     "gallery.alt_4": "Sunrise on the Ganga",
     "gallery.alt_5": "The Eternal Ghats",
-    
+
     // Hero additional
     "hero.badge": "ॐ · 15+ Years of Trusted Pilgrimages",
     "hero.title1": "Experience the Divine",
@@ -85,83 +88,109 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.pilgrims": "Pilgrims",
     "hero.holy_cities": "Holy Cities",
     "hero.scroll": "Scroll",
-    
+
     // About additional
     "about.years_exp": "Years of Experience",
     "about.happy_pilgrims": "Happy Pilgrims",
     "about.managed_tours": "Fully Managed Tours",
-    
+
     // Kashi places
     "place.kashi.vishwanath.name": "Kashi Vishwanath Temple",
-    "place.kashi.vishwanath.desc": "One of the twelve Jyotirlingas, the spiritual heart of Varanasi dedicated to Lord Shiva.",
+    "place.kashi.vishwanath.desc":
+      "One of the twelve Jyotirlingas, the spiritual heart of Varanasi dedicated to Lord Shiva.",
     "place.kashi.dashashwamedh.name": "Dashashwamedh Ghat",
-    "place.kashi.dashashwamedh.desc": "The most vibrant ghat where the legendary Ganga Aarti takes place every evening.",
+    "place.kashi.dashashwamedh.desc":
+      "The most vibrant ghat where the legendary Ganga Aarti takes place every evening.",
     "place.kashi.ganga_aarti.name": "Ganga Aarti",
-    "place.kashi.ganga_aarti.desc": "A mesmerizing fire ritual performed by priests on the banks of the holy Ganga.",
+    "place.kashi.ganga_aarti.desc":
+      "A mesmerizing fire ritual performed by priests on the banks of the holy Ganga.",
     "place.kashi.assi.name": "Assi Ghat",
-    "place.kashi.assi.desc": "A peaceful southern ghat — perfect for sunrise yoga and quiet reflection.",
+    "place.kashi.assi.desc":
+      "A peaceful southern ghat — perfect for sunrise yoga and quiet reflection.",
     "place.kashi.manikarnika.name": "Manikarnika Ghat",
-    "place.kashi.manikarnika.desc": "The sacred cremation ghat believed to grant moksha — liberation from rebirth.",
+    "place.kashi.manikarnika.desc":
+      "The sacred cremation ghat believed to grant moksha — liberation from rebirth.",
     "place.kashi.sarnath.name": "Sarnath",
-    "place.kashi.sarnath.desc": "Where Lord Buddha gave his first sermon — home to ancient stupas and museums.",
+    "place.kashi.sarnath.desc":
+      "Where Lord Buddha gave his first sermon — home to ancient stupas and museums.",
     "place.kashi.tulsi.name": "Tulsi Manas Temple",
-    "place.kashi.tulsi.desc": "Marble temple where Tulsidas composed the Ramcharitmanas, surrounded by lush gardens.",
+    "place.kashi.tulsi.desc":
+      "Marble temple where Tulsidas composed the Ramcharitmanas, surrounded by lush gardens.",
     "place.kashi.bhu.name": "Banaras Hindu University",
-    "place.kashi.bhu.desc": "A sprawling campus housing the beautiful New Vishwanath Temple and Bharat Kala Bhavan museum.",
+    "place.kashi.bhu.desc":
+      "A sprawling campus housing the beautiful New Vishwanath Temple and Bharat Kala Bhavan museum.",
     "place.kashi.ramnagar.name": "Ramnagar Fort",
-    "place.kashi.ramnagar.desc": "An 18th-century riverside fort and museum showcasing royal heritage of Kashi.",
+    "place.kashi.ramnagar.desc":
+      "An 18th-century riverside fort and museum showcasing royal heritage of Kashi.",
     "place.kashi.kaal.name": "Kaal Bhairav Temple",
-    "place.kashi.kaal.desc": "Ancient temple of the fierce protector of Kashi — visited by every devout pilgrim.",
-    
+    "place.kashi.kaal.desc":
+      "Ancient temple of the fierce protector of Kashi — visited by every devout pilgrim.",
+
     // Gaya places
     "place.gaya.vishnupad.name": "Vishnupad Temple",
-    "place.gaya.vishnupad.desc": "Marks the footprint of Lord Vishnu — the spiritual center of Gaya.",
+    "place.gaya.vishnupad.desc":
+      "Marks the footprint of Lord Vishnu — the spiritual center of Gaya.",
     "place.gaya.falgu.name": "Falgu River",
-    "place.gaya.falgu.desc": "The sacred river where Pind Daan rituals are performed for ancestors.",
+    "place.gaya.falgu.desc":
+      "The sacred river where Pind Daan rituals are performed for ancestors.",
     "place.gaya.mangla.name": "Mangla Gauri Temple",
     "place.gaya.mangla.desc": "One of the 18 Shakti Peethas, dedicated to Goddess Sati.",
     "place.gaya.akshayavat.name": "Akshayavat",
-    "place.gaya.akshayavat.desc": "The eternal banyan tree where final Pind Daan offerings are made.",
+    "place.gaya.akshayavat.desc":
+      "The eternal banyan tree where final Pind Daan offerings are made.",
     "place.gaya.brahmayoni.name": "Brahmayoni Hill",
-    "place.gaya.brahmayoni.desc": "424 stone steps lead to a sacred hilltop with panoramic views of Gaya.",
+    "place.gaya.brahmayoni.desc":
+      "424 stone steps lead to a sacred hilltop with panoramic views of Gaya.",
     "place.gaya.surya.name": "Surya Kund",
     "place.gaya.surya.desc": "Sacred water tank near Vishnupad believed to have healing powers.",
     "place.gaya.bodhi.name": "Bodhi Tree (nearby)",
-    "place.gaya.bodhi.desc": "Ancient tree under which Buddha attained enlightenment, a short trip away.",
+    "place.gaya.bodhi.desc":
+      "Ancient tree under which Buddha attained enlightenment, a short trip away.",
     "place.gaya.pretshila.name": "Pretshila Hill",
-    "place.gaya.pretshila.desc": "Hilltop pilgrimage site for ancestral rituals with panoramic views.",
+    "place.gaya.pretshila.desc":
+      "Hilltop pilgrimage site for ancestral rituals with panoramic views.",
     "place.gaya.ramshila.name": "Ramshila Hill",
     "place.gaya.ramshila.desc": "Sacred hill with the Patal Devi Temple and serene walking paths.",
     "place.gaya.dungeshwari.name": "Dungeshwari Caves",
-    "place.gaya.dungeshwari.desc": "The hill caves where Buddha meditated for years before enlightenment.",
-    
+    "place.gaya.dungeshwari.desc":
+      "The hill caves where Buddha meditated for years before enlightenment.",
+
     // Bodhgaya places
     "place.bodhgaya.mahabodhi.name": "Mahabodhi Temple",
-    "place.bodhgaya.mahabodhi.desc": "UNESCO World Heritage site marking where Buddha attained enlightenment.",
+    "place.bodhgaya.mahabodhi.desc":
+      "UNESCO World Heritage site marking where Buddha attained enlightenment.",
     "place.bodhgaya.bodhi.name": "Bodhi Tree",
-    "place.bodhgaya.bodhi.desc": "Sacred descendant of the original tree under which Buddha meditated.",
+    "place.bodhgaya.bodhi.desc":
+      "Sacred descendant of the original tree under which Buddha meditated.",
     "place.bodhgaya.statue.name": "Great Buddha Statue",
     "place.bodhgaya.statue.desc": "A stunning 80-foot tall Buddha statue — a symbol of peace.",
     "place.bodhgaya.thai.name": "Thai Monastery",
-    "place.bodhgaya.thai.desc": "Beautiful golden monastery built in classic Thai architectural style.",
+    "place.bodhgaya.thai.desc":
+      "Beautiful golden monastery built in classic Thai architectural style.",
     "place.bodhgaya.japanese.name": "Japanese Temple (Indosan Nipponji)",
-    "place.bodhgaya.japanese.desc": "Tranquil Japanese temple known for its peaceful meditation hall.",
+    "place.bodhgaya.japanese.desc":
+      "Tranquil Japanese temple known for its peaceful meditation hall.",
     "place.bodhgaya.tibetan.name": "Tibetan Karma Temple",
     "place.bodhgaya.tibetan.desc": "Houses a magnificent Dharma Chakra and prayer wheels.",
     "place.bodhgaya.bhutanese.name": "Royal Bhutanese Monastery",
     "place.bodhgaya.bhutanese.desc": "Showcases stunning Bhutanese clay carvings and murals.",
     "place.bodhgaya.animeshlochan.name": "Animeshlochan Chaitya",
-    "place.bodhgaya.animeshlochan.desc": "Where Buddha gazed at the Bodhi tree in gratitude for a week.",
+    "place.bodhgaya.animeshlochan.desc":
+      "Where Buddha gazed at the Bodhi tree in gratitude for a week.",
     "place.bodhgaya.muchalinda.name": "Muchalinda Lake",
-    "place.bodhgaya.muchalinda.desc": "Sacred lake where the serpent king sheltered Buddha during a storm.",
+    "place.bodhgaya.muchalinda.desc":
+      "Sacred lake where the serpent king sheltered Buddha during a storm.",
     "place.bodhgaya.museum.name": "Archaeological Museum",
-    "place.bodhgaya.museum.desc": "Houses artifacts and sculptures from the Pala and Gupta periods.",
-    
+    "place.bodhgaya.museum.desc":
+      "Houses artifacts and sculptures from the Pala and Gupta periods.",
+
     // Prayagraj places
     "place.prayagraj.sangam.name": "Triveni Sangam",
-    "place.prayagraj.sangam.desc": "The holy confluence of Ganga, Yamuna and the mythical Saraswati.",
+    "place.prayagraj.sangam.desc":
+      "The holy confluence of Ganga, Yamuna and the mythical Saraswati.",
     "place.prayagraj.fort.name": "Allahabad Fort",
-    "place.prayagraj.fort.desc": "Mighty Mughal fort built by Akbar, housing the sacred Akshayavat tree.",
+    "place.prayagraj.fort.desc":
+      "Mighty Mughal fort built by Akbar, housing the sacred Akshayavat tree.",
     "place.prayagraj.anand.name": "Anand Bhavan",
     "place.prayagraj.anand.desc": "Historic ancestral home of the Nehru family, now a museum.",
     "place.prayagraj.hanuman.name": "Hanuman Mandir (Bade Hanumanji)",
@@ -169,42 +198,57 @@ const translations: Record<Language, Record<string, string>> = {
     "place.prayagraj.khusro.name": "Khusro Bagh",
     "place.prayagraj.khusro.desc": "Walled Mughal garden with three magnificent sandstone tombs.",
     "place.prayagraj.cathedral.name": "All Saints Cathedral",
-    "place.prayagraj.cathedral.desc": "Stunning 19th-century Gothic-style cathedral, a colonial-era marvel.",
+    "place.prayagraj.cathedral.desc":
+      "Stunning 19th-century Gothic-style cathedral, a colonial-era marvel.",
     "place.prayagraj.alopi.name": "Alopi Devi Mandir",
-    "place.prayagraj.alopi.desc": "Unique Shakti Peetha temple where a wooden palanquin is worshipped.",
+    "place.prayagraj.alopi.desc":
+      "Unique Shakti Peetha temple where a wooden palanquin is worshipped.",
     "place.prayagraj.mankameshwar.name": "Mankameshwar Temple",
-    "place.prayagraj.mankameshwar.desc": "Ancient Shiva temple on the banks of the Yamuna fulfilling devotees' wishes.",
+    "place.prayagraj.mankameshwar.desc":
+      "Ancient Shiva temple on the banks of the Yamuna fulfilling devotees' wishes.",
     "place.prayagraj.shankar.name": "Shankar Viman Mandapam",
     "place.prayagraj.shankar.desc": "Four-storeyed South Indian style temple near the Sangam.",
     "place.prayagraj.kumbh.name": "Kumbh Mela Grounds",
-    "place.prayagraj.kumbh.desc": "Vast sacred grounds that host the world's largest spiritual gathering.",
-    
+    "place.prayagraj.kumbh.desc":
+      "Vast sacred grounds that host the world's largest spiritual gathering.",
+
     // Ayodhya places
     "place.ayodhya.ram.name": "Ram Mandir",
-    "place.ayodhya.ram.desc": "The grand temple marking the birthplace of Lord Rama — Ayodhya's spiritual heart.",
+    "place.ayodhya.ram.desc":
+      "The grand temple marking the birthplace of Lord Rama — Ayodhya's spiritual heart.",
     "place.ayodhya.hanuman_garhi.name": "Hanuman Garhi",
-    "place.ayodhya.hanuman_garhi.desc": "Hilltop temple of Lord Hanuman, guardian deity of Ayodhya, reached by 76 steps.",
+    "place.ayodhya.hanuman_garhi.desc":
+      "Hilltop temple of Lord Hanuman, guardian deity of Ayodhya, reached by 76 steps.",
     "place.ayodhya.kanak.name": "Kanak Bhawan",
-    "place.ayodhya.kanak.desc": "Beautiful temple gifted to Sita, adorned with gold-crowned idols of Ram and Sita.",
+    "place.ayodhya.kanak.desc":
+      "Beautiful temple gifted to Sita, adorned with gold-crowned idols of Ram and Sita.",
     "place.ayodhya.nageshwarnath.name": "Nageshwarnath Temple",
-    "place.ayodhya.nageshwarnath.desc": "Ancient Shiva temple believed to be established by Kush, son of Lord Rama.",
+    "place.ayodhya.nageshwarnath.desc":
+      "Ancient Shiva temple believed to be established by Kush, son of Lord Rama.",
     "place.ayodhya.paidi.name": "Ram Ki Paidi",
-    "place.ayodhya.paidi.desc": "Series of ghats on the Saryu river, glowing beautifully during evening aarti.",
+    "place.ayodhya.paidi.desc":
+      "Series of ghats on the Saryu river, glowing beautifully during evening aarti.",
     "place.ayodhya.saryu.name": "Saryu River",
-    "place.ayodhya.saryu.desc": "The holy river of Ayodhya where pilgrims take a sacred dip and offer prayers.",
+    "place.ayodhya.saryu.desc":
+      "The holy river of Ayodhya where pilgrims take a sacred dip and offer prayers.",
     "place.ayodhya.treta.name": "Treta Ke Thakur",
-    "place.ayodhya.treta.desc": "Ancient temple housing idols said to date back to the time of Lord Rama.",
+    "place.ayodhya.treta.desc":
+      "Ancient temple housing idols said to date back to the time of Lord Rama.",
     "place.ayodhya.dashrath.name": "Dashrath Mahal",
-    "place.ayodhya.dashrath.desc": "Royal residence of King Dashrath, father of Lord Rama, now a serene temple.",
+    "place.ayodhya.dashrath.desc":
+      "Royal residence of King Dashrath, father of Lord Rama, now a serene temple.",
     "place.ayodhya.guptar.name": "Guptar Ghat",
-    "place.ayodhya.guptar.desc": "Tranquil riverside ghat where Lord Rama is believed to have taken jal samadhi.",
+    "place.ayodhya.guptar.desc":
+      "Tranquil riverside ghat where Lord Rama is believed to have taken jal samadhi.",
     "place.ayodhya.bharat.name": "Bharat Kund",
-    "place.ayodhya.bharat.desc": "Sacred tank where Bharat performed penance awaiting Lord Rama's return.",
-    
+    "place.ayodhya.bharat.desc":
+      "Sacred tank where Bharat performed penance awaiting Lord Rama's return.",
+
     // Contact
     "contact.eyebrow": "Contact Us",
     "contact.title": "Begin Your Yatra",
-    "contact.subtitle": "Tell us about your pilgrimage dream. We'll craft a soulful journey for you.",
+    "contact.subtitle":
+      "Tell us about your pilgrimage dream. We'll craft a soulful journey for you.",
     "contact.call_us": "Call Us",
     "contact.email": "Email",
     "contact.office": "Office",
@@ -221,18 +265,27 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.message_placeholder": "Tell us about your travel dates and group size...",
     "contact.send": "Send Inquiry",
     "contact.sent": "✓ We'll be in touch soon",
-    
+    "contact.sending": "Sending...",
+    "contact.select_package": "Select a package",
+    "contact.error_fields": "Please fill out all required fields.",
+    "contact.error_send": "Unable to send your inquiry at the moment. Please try again later.",
+    "contact.success": "Thank you for contacting Lena Travels. We will get back to you shortly.",
+
     // Package
     "package.eyebrow": "Featured Package",
     "package.title": "Kashi Yatra Sacred Package",
-    "package.subtitle": "Two carefully crafted pilgrimage experiences — fully managed from your doorstep to the ghats.",
+    "package.subtitle":
+      "Two carefully crafted pilgrimage experiences — fully managed from your doorstep to the ghats.",
     "package.most_popular": "Most Popular",
     "package.train": "Train Package",
     "package.flight": "Flight Package",
     "package.days": "days",
     "package.per_person": "per person",
+    "package.avg_amount": "Average Amount",
     "package.premium": "Premium fast pilgrimage — pricing on request",
     "package.book_now": "Book Now",
+    "package.book_train": "Book Train Package",
+    "package.book_flight": "Get Flight Quote",
     "package.everything_included": "Everything Included",
     "package.travel": "Travel (Train / Flight)",
     "package.accommodation": "Comfortable Accommodation",
@@ -240,12 +293,28 @@ const translations: Record<Language, Record<string, string>> = {
     "package.transport": "Local Transport",
     "package.visits": "Temple Visits",
     "package.guided": "Guided Tour",
-    "package.managed": "All arrangements including stay and food are completely managed by Lena Travels.",
-    
+    "package.managed":
+      "All arrangements including stay and food are completely managed by Lena Travels.",
+    "package.train_desc":
+      "Comfortable rail journey covering Kashi, Gaya, Bodh Gaya and Prayagraj with stay, meals and local sightseeing arranged.",
+    "package.flight_desc":
+      "Faster and more comfortable air travel covering the same sacred circuit, ideal for elderly pilgrims and short-duration trips.",
+    "package.flight_note":
+      "Based on the season and ticket availability — final fare confirmed at the time of booking.",
+    "package.feature.train_tickets": "Return train tickets",
+    "package.feature.accommodation_meals": "Accommodation & meals",
+    "package.feature.transport_temples": "Local transport & temple visits",
+    "package.feature.guide": "Experienced tour guide",
+    "package.feature.flight_tickets": "Return flight tickets",
+    "package.feature.hotel_meals": "Hotel stay & meals",
+    "package.feature.airport_transfers": "Airport transfers & sightseeing",
+    "package.feature.assistant": "Dedicated travel assistant",
+
     // Services
     "services.eyebrow": "Our Services",
     "services.title": "Crafted with Devotion",
-    "services.subtitle": "Every detail of your pilgrimage handled with care, so you can focus on the divine.",
+    "services.subtitle":
+      "Every detail of your pilgrimage handled with care, so you can focus on the divine.",
     "services.travel_management": "Complete Travel Management",
     "services.travel_management_desc": "End-to-end planning and coordination of every step.",
     "services.accommodation": "Accommodation Booking",
@@ -258,14 +327,17 @@ const translations: Record<Language, Record<string, string>> = {
     "services.group_desc": "Travel in the warm company of fellow devotees.",
     "services.safe": "Safe & Comfortable",
     "services.safe_desc": "Trusted vehicles, verified guides, dedicated care.",
-    
+
     // Testimonials
     "testimonials.eyebrow": "Testimonials",
     "testimonials.title": "Words from our Pilgrims",
-    "testimonials.review1": "Very well organized trip — everything was taken care of from boarding the train to the final aarti. Truly a divine experience.",
-    "testimonials.review2": "The best experience visiting Kashi with this travel service. Knowledgeable guides, clean stay, and pure sattvic meals.",
-    "testimonials.review3": "After 15 years of wanting to visit Prayagraj, Lena Travels made it effortless. They treat pilgrims like family.",
-    
+    "testimonials.review1":
+      "Very well organized trip — everything was taken care of from boarding the train to the final aarti. Truly a divine experience.",
+    "testimonials.review2":
+      "The best experience visiting Kashi with this travel service. Knowledgeable guides, clean stay, and pure sattvic meals.",
+    "testimonials.review3":
+      "After 15 years of wanting to visit Prayagraj, Lena Travels made it effortless. They treat pilgrims like family.",
+
     // WhyUs
     "whyus.eyebrow": "Why Choose Us",
     "whyus.title": "The Difference of Devotion",
@@ -277,11 +349,12 @@ const translations: Record<Language, Record<string, string>> = {
     "whyus.reason6": "24/7 On-Tour Support",
     "whyus.lifetime": "A pilgrimage of a lifetime",
     "whyus.trusted": "Trusted since 2009",
-    
+
     // Footer
     "footer.company": "Lena Travels",
     "footer.subtitle": "Kashi Yatra Specialists",
-    "footer.description": "Guiding pilgrims to the sacred soul of India for over 15 years. Specialists in spiritual journeys to Kashi, Gaya, Buddha Gaya & Prayagraj.",
+    "footer.description":
+      "Guiding pilgrims to the sacred soul of India for over 15 years. Specialists in spiritual journeys to Kashi, Gaya, Buddha Gaya & Prayagraj.",
     "footer.quick_links": "Quick Links",
     "footer.about": "About",
     "footer.destinations": "Destinations",
@@ -291,11 +364,12 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.reach_us": "Reach Us",
     "footer.rights": "All rights reserved.",
     "footer.om_namah": "ॐ नमः शिवाय",
-    
+
     // PilgrimMoments
     "moments.eyebrow": "Happy Journey Memories",
     "moments.title": "Our Pilgrim Moments",
-    "moments.subtitle": "Real photos from our recent yatras — smiles, prayers, and unforgettable memories shared by our pilgrim families.",
+    "moments.subtitle":
+      "Real photos from our recent yatras — smiles, prayers, and unforgettable memories shared by our pilgrim families.",
     "moments.sangat": "Sangat at the Ghats",
     "moments.darshan": "Darshan at the Temple",
     "moments.boarding": "Boarding the Yatra Train",
@@ -311,25 +385,29 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.contact": "தொடர்பு",
     "nav.book_yatra": "யாத்திரை முன்பதிவு",
     "nav.subtitle": "காசி யாத்திரை நிபுணர்கள்",
-    
+
     // Hero
     "hero.title": "புனித பயணங்கள்",
     "hero.subtitle": "இந்தியாவின் இதயத்திற்கு",
-    "hero.description": "காசி, கயா, பிரயாக்ராஜ் மற்றும் அயோத்யாவிற்கான எங்கள் நிபுணர்களால் தயாரிக்கப்பட்ட யாத்திரை தொகுப்புகளுடன் தெய்வீக மகிழ்ச்சியை அனுபவிக்கவும்.",
+    "hero.description":
+      "காசி, கயா, பிரயாக்ராஜ் மற்றும் அயோத்யாவிற்கான எங்கள் நிபுணர்களால் தயாரிக்கப்பட்ட யாத்திரை தொகுப்புகளுடன் தெய்வீக மகிழ்ச்சியை அனுபவிக்கவும்.",
     "hero.cta": "உங்கள் யாத்திரையைத் தொடங்கவும்",
-    
+
     // About
     "about.eyebrow": "எங்களை பற்றி",
     "about.title": "15+ ஆண்டுகள் ஆன்மீக சேவை",
-    "about.subtitle": "காசி, அயோத்தி, கயா, போத் கயா மற்றும் பிரயாக்ராஜ் ஆகிய புனித பாதைகளில் பக்தி, வசதி மற்றும் நம்பகமான பயண நிபுணத்துவத்துடன் யாத்திரீகர்களை வழிநடத்துகிறோம்.",
-    "about.description": "நாங்கள் புனித இடங்களைப் பற்றிய ஆழமான அறிவுடன் நம்பகமான காசி யாத்திரை நிபுணர்கள். எங்கள் குழு ஒவ்வொரு யாத்திரையாளரும் அமைதி, ஆறுதல் மற்றும் தெய்வீக இணைப்பை அனுபவிப்பதை உறுதி செய்கிறது.",
-    
+    "about.subtitle":
+      "காசி, அயோத்தி, கயா, போத் கயா மற்றும் பிரயாக்ராஜ் ஆகிய புனித பாதைகளில் பக்தி, வசதி மற்றும் நம்பகமான பயண நிபுணத்துவத்துடன் யாத்திரீகர்களை வழிநடத்துகிறோம்.",
+    "about.description":
+      "நாங்கள் புனித இடங்களைப் பற்றிய ஆழமான அறிவுடன் நம்பகமான காசி யாத்திரை நிபுணர்கள். எங்கள் குழு ஒவ்வொரு யாத்திரையாளரும் அமைதி, ஆறுதல் மற்றும் தெய்வீக இணைப்பை அனுபவிப்பதை உறுதி செய்கிறது.",
+
     // Destinations
     "dest.eyebrow": "புனித இடங்கள்",
     "dest.title": "ஆன்மாக்கள் அமைதியைக் கண்டறியும் இடம்",
-    "dest.subtitle": "வட இந்தியாவின் நான்கு மிகவும் புனித நகரங்களுக்கான தயாரிக்கப்பட்ட யாத்திரைகள்.",
+    "dest.subtitle":
+      "வட இந்தியாவின் நான்கு மிகவும் புனித நகரங்களுக்கான தயாரிக்கப்பட்ட யாத்திரைகள்.",
     "dest.explore": "ஆராய்வு",
-    
+
     // Destination cards
     "dest.kashi.title": "காசி",
     "dest.kashi.subtitle": "வாரணாசி",
@@ -346,14 +424,14 @@ const translations: Record<Language, Record<string, string>> = {
     "dest.ayodhya.title": "அயோத்யா",
     "dest.ayodhya.subtitle": "உத்தரபிரதேசம்",
     "dest.ayodhya.desc": "பகவான் ராமரின் பிறந்த இடம் — ராம் மந்திரின் இல்லம்.",
-    
+
     // Explore Modal
     "modal.explore": "ஆராய்வு",
     "modal.loading": "புனித இடங்கள் ஏற்றப்படுகின்றன...",
     "modal.close": "மூடு",
     "modal.itinerary": "பயணத் திட்டம் காண்க",
     "modal.book": "இந்த யாத்திரையை முன்பதிவு செய்யுங்கள் →",
-    
+
     // Gallery
     "gallery.eyebrow": "கேலரி",
     "gallery.title": "புனிதத்தின் தெரிவுகள்",
@@ -364,7 +442,7 @@ const translations: Record<Language, Record<string, string>> = {
     "gallery.alt_3": "காசி விஸ்வநாத்",
     "gallery.alt_4": "கங்கையில் சூரியோதயம்",
     "gallery.alt_5": "நித்திய காட்கள்",
-    
+
     // Hero additional
     "hero.badge": "ॐ · 15+ ஆண்டுகள் நம்பகமான யாத்திரைகள்",
     "hero.title1": "தெய்வீகத்தை அனுபவிக்கவும்",
@@ -375,34 +453,44 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.pilgrims": "யாத்ரிகர்கள்",
     "hero.holy_cities": "புனித நகரங்கள்",
     "hero.scroll": "உருளவும்",
-    
+
     // About additional
     "about.years_exp": "ஆண்டுகள் அனுபவம்",
     "about.happy_pilgrims": "மகிழ்ச்சியான யாத்ரிகர்கள்",
     "about.managed_tours": "முழுமையாக நிர்வகிக்கப்பட்ட சுற்றுப்பயணங்கள்",
-    
+
     // Kashi places
     "place.kashi.vishwanath.name": "காசி விஸ்வநாத் கோயில்",
-    "place.kashi.vishwanath.desc": "பன்னிரண்டு ஜோதிர்லிங்கங்களில் ஒன்று, பரமேஸ்வரனுக்கு அர்ப்பணிக்கப்பட்ட வாரணாசியின் ஆன்மீக இதயம்.",
+    "place.kashi.vishwanath.desc":
+      "பன்னிரண்டு ஜோதிர்லிங்கங்களில் ஒன்று, பரமேஸ்வரனுக்கு அர்ப்பணிக்கப்பட்ட வாரணாசியின் ஆன்மீக இதயம்.",
     "place.kashi.dashashwamedh.name": "தசாஷ்வமேத் காட்",
-    "place.kashi.dashashwamedh.desc": "புகழ்பெற்ற கங்கா ஆரதி ஒவ்வொரு மாலையும் நடைபெறும் மிகவும் உயிரோட்டமான காட்.",
+    "place.kashi.dashashwamedh.desc":
+      "புகழ்பெற்ற கங்கா ஆரதி ஒவ்வொரு மாலையும் நடைபெறும் மிகவும் உயிரோட்டமான காட்.",
     "place.kashi.ganga_aarti.name": "கங்கா ஆரதி",
-    "place.kashi.ganga_aarti.desc": "புனித கங்கையின் கரையில் பூசாரிகளால் செய்யப்படும் மயக்கும் நெருப்பு சடங்கு.",
+    "place.kashi.ganga_aarti.desc":
+      "புனித கங்கையின் கரையில் பூசாரிகளால் செய்யப்படும் மயக்கும் நெருப்பு சடங்கு.",
     "place.kashi.assi.name": "அஸ்ஸி காட்",
-    "place.kashi.assi.desc": "ஒரு அமைதியான தெற்கு காட் — சூரிய உதய யோகா மற்றும் அமைதியான சிந்தனைக்கு ஏற்றது.",
+    "place.kashi.assi.desc":
+      "ஒரு அமைதியான தெற்கு காட் — சூரிய உதய யோகா மற்றும் அமைதியான சிந்தனைக்கு ஏற்றது.",
     "place.kashi.manikarnika.name": "மாணிகர்ணிகா காட்",
-    "place.kashi.manikarnika.desc": "மோட்சம் — பிறவியிலிருந்து விடுதலை அளிக்கும் என்று நம்பப்படும் புனித சமாதி காட்.",
+    "place.kashi.manikarnika.desc":
+      "மோட்சம் — பிறவியிலிருந்து விடுதலை அளிக்கும் என்று நம்பப்படும் புனித சமாதி காட்.",
     "place.kashi.sarnath.name": "சாரநாத்",
-    "place.kashi.sarnath.desc": "பகவான் புத்தர் தனது முதல் போதனையை அளித்த இடம் — பழமையான ஸ்தூபங்கள் மற்றும் அருங்காட்சியகங்களின் இல்லம்.",
+    "place.kashi.sarnath.desc":
+      "பகவான் புத்தர் தனது முதல் போதனையை அளித்த இடம் — பழமையான ஸ்தூபங்கள் மற்றும் அருங்காட்சியகங்களின் இல்லம்.",
     "place.kashi.tulsi.name": "துளஸி மானஸ் கோயில்",
-    "place.kashi.tulsi.desc": "துளஸிதாஸ் ராம்சரித்மானஸை இயற்றிய பளிங்கு கோயில், அடர்ந்த தோட்டங்களால் சூழப்பட்டது.",
+    "place.kashi.tulsi.desc":
+      "துளஸிதாஸ் ராம்சரித்மானஸை இயற்றிய பளிங்கு கோயில், அடர்ந்த தோட்டங்களால் சூழப்பட்டது.",
     "place.kashi.bhu.name": "பனாரஸ் இந்து பல்கலைக்கழகம்",
-    "place.kashi.bhu.desc": "அழகான புதிய விஸ்வநாத் கோயில் மற்றும் பாரத் கலா பவன் அருங்காட்சியகத்தை கொண்ட பரந்த வளாகம்.",
+    "place.kashi.bhu.desc":
+      "அழகான புதிய விஸ்வநாத் கோயில் மற்றும் பாரத் கலா பவன் அருங்காட்சியகத்தை கொண்ட பரந்த வளாகம்.",
     "place.kashi.ramnagar.name": "ராம்நகர் கோட்டை",
-    "place.kashi.ramnagar.desc": "காசியின் அரச பாரம்பரியத்தை காட்டும் 18ஆம் நூற்றாண்டின் நதிக்கரை கோட்டை மற்றும் அருங்காட்சியகம்.",
+    "place.kashi.ramnagar.desc":
+      "காசியின் அரச பாரம்பரியத்தை காட்டும் 18ஆம் நூற்றாண்டின் நதிக்கரை கோட்டை மற்றும் அருங்காட்சியகம்.",
     "place.kashi.kaal.name": "கால் பைரவ் கோயில்",
-    "place.kashi.kaal.desc": "காசியின் உக்கிர பாதுகாவலரின் பழமையான கோயில் — ஒவ்வொரு பக்த யாத்ரிகரும் பார்வையிடும்.",
-    
+    "place.kashi.kaal.desc":
+      "காசியின் உக்கிர பாதுகாவலரின் பழமையான கோயில் — ஒவ்வொரு பக்த யாத்ரிகரும் பார்வையிடும்.",
+
     // Gaya places
     "place.gaya.vishnupad.name": "விஷ்ணுபாத் கோயில்",
     "place.gaya.vishnupad.desc": "பகவான் விஷ்ணுவின் கால்தடத்தை குறிக்கிறது — கயாவின் ஆன்மீக மையம்.",
@@ -413,21 +501,26 @@ const translations: Record<Language, Record<string, string>> = {
     "place.gaya.akshayavat.name": "அக்ஷயவட்",
     "place.gaya.akshayavat.desc": "இறுதி பிண்ட தானம் நிவேதனைகள் செய்யப்படும் நித்திய ஆலமரம்.",
     "place.gaya.brahmayoni.name": "பிரஹ்மயோனி மலை",
-    "place.gaya.brahmayoni.desc": "424 கல் படிகள் கயாவின் பானோரமிக் காட்சிகளுடன் புனித மலைக்கு வழிவகுக்கின்றன.",
+    "place.gaya.brahmayoni.desc":
+      "424 கல் படிகள் கயாவின் பானோரமிக் காட்சிகளுடன் புனித மலைக்கு வழிவகுக்கின்றன.",
     "place.gaya.surya.name": "சூர்ய குண்ட்",
-    "place.gaya.surya.desc": "விஷ்ணுபாத் அருகில் குணப்பத்திறன் கொண்டது என்று நம்பப்படும் புனித நீர் தொட்டி.",
+    "place.gaya.surya.desc":
+      "விஷ்ணுபாத் அருகில் குணப்பத்திறன் கொண்டது என்று நம்பப்படும் புனித நீர் தொட்டி.",
     "place.gaya.bodhi.name": "போதி மரம் (அருகில்)",
     "place.gaya.bodhi.desc": "புத்தர் ஞானம் பெற்ற பழமையான மரம், ஒரு குறுகிய பயணம்.",
     "place.gaya.pretshila.name": "பிரேத்ஷிலா மலை",
-    "place.gaya.pretshila.desc": "மூதாதையர் சடங்குகளுக்கான மலைக்கு யாத்ரை இடம் பானோரமிக் காட்சிகளுடன்.",
+    "place.gaya.pretshila.desc":
+      "மூதாதையர் சடங்குகளுக்கான மலைக்கு யாத்ரை இடம் பானோரமிக் காட்சிகளுடன்.",
     "place.gaya.ramshila.name": "ராம்ஷிலா மலை",
     "place.gaya.ramshila.desc": "பாடல் தேவி கோயில் மற்றும் அமைதியான நடைபாதைகளுடன் புனித மலை.",
     "place.gaya.dungeshwari.name": "டுங்கேஷ்வரி குகைகள்",
-    "place.gaya.dungeshwari.desc": "ஞானம் பெறுவதற்கு முன் புத்தர் ஆண்டுகள் தியானம் செய்த மலை குகைகள்.",
-    
+    "place.gaya.dungeshwari.desc":
+      "ஞானம் பெறுவதற்கு முன் புத்தர் ஆண்டுகள் தியானம் செய்த மலை குகைகள்.",
+
     // Bodhgaya places
     "place.bodhgaya.mahabodhi.name": "மகாபோதி கோயில்",
-    "place.bodhgaya.mahabodhi.desc": "புத்தர் ஞானம் பெற்ற இடத்தை குறிக்கும் யுனெஸ்கோ உலக பாரம்பரிய தளம்.",
+    "place.bodhgaya.mahabodhi.desc":
+      "புத்தர் ஞானம் பெற்ற இடத்தை குறிக்கும் யுனெஸ்கோ உலக பாரம்பரிய தளம்.",
     "place.bodhgaya.bodhi.name": "போதி மரம்",
     "place.bodhgaya.bodhi.desc": "புத்தர் தியானம் செய்த அசல் மரத்தின் புனித வழித்தோன்றல்.",
     "place.bodhgaya.statue.name": "பெரிய புத்தர் சிலை",
@@ -435,66 +528,88 @@ const translations: Record<Language, Record<string, string>> = {
     "place.bodhgaya.thai.name": "தாய் மடாலயம்",
     "place.bodhgaya.thai.desc": "கிளாசிக் தாய் கட்டிடக்கலை பாணியில் கட்டப்பட்ட அழகான தங்க மடாலயம்.",
     "place.bodhgaya.japanese.name": "ஜப்பானிய கோயில் (இன்டோசான் நிப்போன்ஜி)",
-    "place.bodhgaya.japanese.desc": "அமைதியான தியான மண்டபத்திற்கு பெயர் பெற்ற அமைதியான ஜப்பானிய கோயில்.",
+    "place.bodhgaya.japanese.desc":
+      "அமைதியான தியான மண்டபத்திற்கு பெயர் பெற்ற அமைதியான ஜப்பானிய கோயில்.",
     "place.bodhgaya.tibetan.name": "திபெத்தியன் கர்மா கோயில்",
-    "place.bodhgaya.tibetan.desc": "அற்புதமான தர்ம சக்ரம் மற்றும் பிரார்த்தனை சக்கரங்களை கொண்டுள்ளது.",
+    "place.bodhgaya.tibetan.desc":
+      "அற்புதமான தர்ம சக்ரம் மற்றும் பிரார்த்தனை சக்கரங்களை கொண்டுள்ளது.",
     "place.bodhgaya.bhutanese.name": "ராயல் பூடானீஸ் மடாலயம்",
-    "place.bodhgaya.bhutanese.desc": "அற்புதமான பூடானீஸ் களிமண் செதுக்குதல்கள் மற்றும் சுவரோவியல்களை காட்டுகிறது.",
+    "place.bodhgaya.bhutanese.desc":
+      "அற்புதமான பூடானீஸ் களிமண் செதுக்குதல்கள் மற்றும் சுவரோவியல்களை காட்டுகிறது.",
     "place.bodhgaya.animeshlochan.name": "அனிமேஷ்லோசன் சைத்யா",
     "place.bodhgaya.animeshlochan.desc": "புத்தர் ஒரு வாரம் நன்றியுடன் போதி மரத்தை பார்த்த இடம்.",
     "place.bodhgaya.muchalinda.name": "முசலிந்தா ஏரி",
     "place.bodhgaya.muchalinda.desc": "புத்தரை புயலின் போது சர்ப்ப ராஜா பாதுகாத்த புனித ஏரி.",
     "place.bodhgaya.museum.name": "தொல்பொருள் அருங்காட்சியகம்",
-    "place.bodhgaya.museum.desc": "பாலா மற்றும் குப்தா காலத்திலிருந்து கலைப்பொருட்கள் மற்றும் சிற்பங்களை கொண்டுள்ளது.",
-    
+    "place.bodhgaya.museum.desc":
+      "பாலா மற்றும் குப்தா காலத்திலிருந்து கலைப்பொருட்கள் மற்றும் சிற்பங்களை கொண்டுள்ளது.",
+
     // Prayagraj places
     "place.prayagraj.sangam.name": "த்ரிவேணி சங்கமம்",
     "place.prayagraj.sangam.desc": "கங்கை, யமுனா மற்றும் புராண சரஸ்வதியின் புனித சங்கமம்.",
     "place.prayagraj.fort.name": "அலகாபாத் கோட்டை",
-    "place.prayagraj.fort.desc": "அக்பரால் கட்டப்பட்ட வலிமையான முகலாய கோட்டை, புனித அக்ஷயவட் மரத்தை கொண்டுள்ளது.",
+    "place.prayagraj.fort.desc":
+      "அக்பரால் கட்டப்பட்ட வலிமையான முகலாய கோட்டை, புனித அக்ஷயவட் மரத்தை கொண்டுள்ளது.",
     "place.prayagraj.anand.name": "ஆனந்த் பவன்",
-    "place.prayagraj.anand.desc": "நெரு குடும்பத்தின் வரலாற்று மூதாதையர் வீடு, இப்போது ஒரு அருங்காட்சியகம்.",
+    "place.prayagraj.anand.desc":
+      "நெரு குடும்பத்தின் வரலாற்று மூதாதையர் வீடு, இப்போது ஒரு அருங்காட்சியகம்.",
     "place.prayagraj.hanuman.name": "ஹனுமான் மந்திர் (படே ஹனுமான்ஜி)",
     "place.prayagraj.hanuman.desc": "சங்கமத்திற்கு அருகில் பிரபலமான சாய்ந்த ஹனுமான் சிலை.",
     "place.prayagraj.khusro.name": "குஸ்ரோ பாக்",
-    "place.prayagraj.khusro.desc": "மூன்று அற்புதமான மணற்கல் சமாதிகளை கொண்ட சுவரம் சூழ்ந்த முகலாய தோட்டம்.",
+    "place.prayagraj.khusro.desc":
+      "மூன்று அற்புதமான மணற்கல் சமாதிகளை கொண்ட சுவரம் சூழ்ந்த முகலாய தோட்டம்.",
     "place.prayagraj.cathedral.name": "ஆல் செயின்ட்ஸ் கதீட்ரல்",
-    "place.prayagraj.cathedral.desc": "அற்புதமான 19ஆம் நூற்றாண்டின் கோதிக் பாணி கதீட்ரல், ஒரு காலனிய கால அதிசயம்.",
+    "place.prayagraj.cathedral.desc":
+      "அற்புதமான 19ஆம் நூற்றாண்டின் கோதிக் பாணி கதீட்ரல், ஒரு காலனிய கால அதிசயம்.",
     "place.prayagraj.alopi.name": "அலோபி தேவி மந்திர்",
-    "place.prayagraj.alopi.desc": "ஒரு மர பல்லக்கி வழிபடுதல் செய்யப்படும் தனித்துவமான சக்தி பீட கோயில்.",
+    "place.prayagraj.alopi.desc":
+      "ஒரு மர பல்லக்கி வழிபடுதல் செய்யப்படும் தனித்துவமான சக்தி பீட கோயில்.",
     "place.prayagraj.mankameshwar.name": "மன்கேஷ்வர் கோயில்",
-    "place.prayagraj.mankameshwar.desc": "பக்தர்களின் விருப்பங்களை நிறைவேற்றும் யமுனா கரையில் உள்ள பழமையான சிவன் கோயில்.",
+    "place.prayagraj.mankameshwar.desc":
+      "பக்தர்களின் விருப்பங்களை நிறைவேற்றும் யமுனா கரையில் உள்ள பழமையான சிவன் கோயில்.",
     "place.prayagraj.shankar.name": "ஷங்கர் விமான் மண்டபம்",
     "place.prayagraj.shankar.desc": "சங்கமத்திற்கு அருகில் நான்கு மாடி தெற்கு இந்திய பாணி கோயில்.",
     "place.prayagraj.kumbh.name": "கும்ப மேளா மைதானம்",
-    "place.prayagraj.kumbh.desc": "உலகின் மிகப்பெரிய ஆன்மீக கூட்டத்தை நடத்தும் பரந்த புனித நிலங்கள்.",
-    
+    "place.prayagraj.kumbh.desc":
+      "உலகின் மிகப்பெரிய ஆன்மீக கூட்டத்தை நடத்தும் பரந்த புனித நிலங்கள்.",
+
     // Ayodhya places
     "place.ayodhya.ram.name": "ராம் மந்திர்",
-    "place.ayodhya.ram.desc": "பகவான் ராமரின் பிறந்த இடத்தை குறிக்கும் பெரிய கோயில் — அயோத்யாவின் ஆன்மீக இதயம்.",
+    "place.ayodhya.ram.desc":
+      "பகவான் ராமரின் பிறந்த இடத்தை குறிக்கும் பெரிய கோயில் — அயோத்யாவின் ஆன்மீக இதயம்.",
     "place.ayodhya.hanuman_garhi.name": "ஹனுமான் கர்ஹி",
-    "place.ayodhya.hanuman_garhi.desc": "76 படிகள் மூலம் அடையலாம், அயோத்யாவின் காவல் தெய்வமான பகவான் ஹனுமானின் மலைமேல் கோயில்.",
+    "place.ayodhya.hanuman_garhi.desc":
+      "76 படிகள் மூலம் அடையலாம், அயோத்யாவின் காவல் தெய்வமான பகவான் ஹனுமானின் மலைமேல் கோயில்.",
     "place.ayodhya.kanak.name": "கனக் பவன்",
-    "place.ayodhya.kanak.desc": "ராமர் மற்றும் சீதாவின் தங்க முடி சிலைகளுடன் அலங்கரிக்கப்பட்ட சீதாவுக்கு பரிசளிக்கப்பட்ட அழகான கோயில்.",
+    "place.ayodhya.kanak.desc":
+      "ராமர் மற்றும் சீதாவின் தங்க முடி சிலைகளுடன் அலங்கரிக்கப்பட்ட சீதாவுக்கு பரிசளிக்கப்பட்ட அழகான கோயில்.",
     "place.ayodhya.nageshwarnath.name": "நாகேஷ்வரநாத் கோயில்",
-    "place.ayodhya.nageshwarnath.desc": "பகவான் ராமரின் மகன் குஷ் நிறுவியது என்று நம்பப்படும் பழமையான சிவன் கோயில்.",
+    "place.ayodhya.nageshwarnath.desc":
+      "பகவான் ராமரின் மகன் குஷ் நிறுவியது என்று நம்பப்படும் பழமையான சிவன் கோயில்.",
     "place.ayodhya.paidi.name": "ராம் கி பைடி",
-    "place.ayodhya.paidi.desc": "சர்யூ நதியில் உள்ள காட்கள் தொடர், மாலை ஆரதியின் போது அழகாக ஒளிரும்.",
+    "place.ayodhya.paidi.desc":
+      "சர்யூ நதியில் உள்ள காட்கள் தொடர், மாலை ஆரதியின் போது அழகாக ஒளிரும்.",
     "place.ayodhya.saryu.name": "சர்யூ நதி",
-    "place.ayodhya.saryu.desc": "யாத்ரிகர்கள் புனித நீராடும் மற்றும் பிரார்த்தனை செய்யும் அயோத்யாவின் புனித நதி.",
+    "place.ayodhya.saryu.desc":
+      "யாத்ரிகர்கள் புனித நீராடும் மற்றும் பிரார்த்தனை செய்யும் அயோத்யாவின் புனித நதி.",
     "place.ayodhya.treta.name": "திரேதா கே தாகூர்",
-    "place.ayodhya.treta.desc": "பகவான் ராமரின் காலத்திற்கு தேதி செய்யப்பட்டது என்று கூறப்படும் சிலைகளை கொண்ட பழமையான கோயில்.",
+    "place.ayodhya.treta.desc":
+      "பகவான் ராமரின் காலத்திற்கு தேதி செய்யப்பட்டது என்று கூறப்படும் சிலைகளை கொண்ட பழமையான கோயில்.",
     "place.ayodhya.dashrath.name": "தஷ்ரத் மஹல்",
-    "place.ayodhya.dashrath.desc": "பகவான் ராமரின் தந்தை ராஜா தஷ்ரத்தின் அரச வாசஸ்தலம், இப்போது ஒரு அமைதியான கோயில்.",
+    "place.ayodhya.dashrath.desc":
+      "பகவான் ராமரின் தந்தை ராஜா தஷ்ரத்தின் அரச வாசஸ்தலம், இப்போது ஒரு அமைதியான கோயில்.",
     "place.ayodhya.guptar.name": "குப்தர் காட்",
-    "place.ayodhya.guptar.desc": "பகவான் ராமர் ஜல் சமாதி எடுத்தது என்று நம்பப்படும் அமைதியான நதிக்கரை காட்.",
+    "place.ayodhya.guptar.desc":
+      "பகவான் ராமர் ஜல் சமாதி எடுத்தது என்று நம்பப்படும் அமைதியான நதிக்கரை காட்.",
     "place.ayodhya.bharat.name": "பாரத் குண்ட்",
-    "place.ayodhya.bharat.desc": "பகவான் ராமரின் திரும்புவதற்காக காத்திருந்து தவம் செய்த பாரத் செய்த புனித தொட்டி.",
-    
+    "place.ayodhya.bharat.desc":
+      "பகவான் ராமரின் திரும்புவதற்காக காத்திருந்து தவம் செய்த பாரத் செய்த புனித தொட்டி.",
+
     // Contact
     "contact.eyebrow": "தொடர்பு கொள்ளுங்கள்",
     "contact.title": "உங்கள் யாத்திரையைத் தொடங்கவும்",
-    "contact.subtitle": "உங்கள் யாத்திரை கனவை எங்களிடம் பகிருங்கள். உங்களுக்காக ஒரு ஆன்மீக பயணத்தை உருவாக்குவோம்.",
+    "contact.subtitle":
+      "உங்கள் யாத்திரை கனவை எங்களிடம் பகிருங்கள். உங்களுக்காக ஒரு ஆன்மீக பயணத்தை உருவாக்குவோம்.",
     "contact.call_us": "எங்களை அழைக்கவும்",
     "contact.email": "மின்னஞ்சல்",
     "contact.office": "அலுவலகம்",
@@ -508,21 +623,33 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.prayagraj": "பிரயாக்ராஜ் ஸ்நான்",
     "contact.custom": "தனிப்பயன் பயணத் திட்டம்",
     "contact.message": "செய்தி",
-    "contact.message_placeholder": "உங்கள் பயணத் தேதிகள் மற்றும் குழு அளவை பற்றி எங்களிடம் பகிருங்கள்...",
+    "contact.message_placeholder":
+      "உங்கள் பயணத் தேதிகள் மற்றும் குழு அளவை பற்றி எங்களிடம் பகிருங்கள்...",
     "contact.send": "விசாரம் அனுப்புங்கள்",
     "contact.sent": "✓ விரைவில் தொடர்பில் இருப்போம்",
-    
-    // Package
+    "contact.sending": "அனுப்புகிறோம்...",
+    "contact.select_package": "ஒரு தொகுப்பை தேர்ந்தெடுக்கவும்",
+    "contact.error_fields": "தயவுசெய்து அனைத்து தேவையான புலங்களையும் நிரப்பவும்.",
+    "contact.error_send":
+      "தற்போது உங்கள் விசாரணையை அனுப்ப முடியவில்லை. தயவுசெய்து பின்னர் மீண்டும் முயற்சிக்கவும்.",
+    "contact.success":
+      "லேனா டிராவெல்ஸை தொடர்பு கொண்டதற்கு நன்றி. நாங்கள் விரைவில் உங்களை தொடர்பு கொள்வோம்.",
+
+    // Package (Tamil)
     "package.eyebrow": "சிறப்பட்ட தொகுப்பு",
     "package.title": "காசி யாத்திரை புனித தொகுப்பு",
-    "package.subtitle": "இரண்டு கவனமாக உருவாக்கப்பட்ட யாத்திரை அனுபவங்கள் — உங்கள் வாசலிலிருந்து காட்கள் வரை முழுமையாக நிர்வகிக்கப்பட்டவை.",
+    "package.subtitle":
+      "இரண்டு கவனமாக உருவாக்கப்பட்ட யாத்திரை அனுபவங்கள் — உங்கள் வாசலிலிருந்து காட்கள் வரை முழுமையாக நிர்வகிக்கப்பட்டவை.",
     "package.most_popular": "மிகவும் பிரபலமானது",
     "package.train": "ரயில் தொகுப்பு",
     "package.flight": "விமானம் தொகுப்பு",
     "package.days": "நாட்கள்",
     "package.per_person": "ஒருவருக்கு",
+    "package.avg_amount": "சராசரி தொகை",
     "package.premium": "பிரீமியம் வேக யாத்திரை — விலைப்பட்டி கேட்கவும்",
     "package.book_now": "இப்போது முன்பதிவு செய்யுங்கள்",
+    "package.book_train": "ரயில் தொகுப்பை முன்பதிவு செய்யுங்கள்",
+    "package.book_flight": "விமான மேற்கோள் பெறுங்கள்",
     "package.everything_included": "எல்லாம் சேர்க்கப்பட்டுள்ளன",
     "package.travel": "பயணம் (ரயில் / விமானம்)",
     "package.accommodation": "ஆறுதலான தங்குதல் முன்பதிவு",
@@ -530,16 +657,34 @@ const translations: Record<Language, Record<string, string>> = {
     "package.transport": "உள்ளூர் போக்குவரத்து",
     "package.visits": "கோயில் பார்வைகள்",
     "package.guided": "வழிநடத்தப்பட்ட சுற்றுப்பயணம்",
-    "package.managed": "தங்குதல் மற்றும் உணவு உட்பட அனைத்து ஏற்பாடுகளையும் லேனா டிராவெல்ஸ் முழுமையாக நிர்வகிக்கிறது.",
-    
+    "package.managed":
+      "தங்குதல் மற்றும் உணவு உட்பட அனைத்து ஏற்பாடுகளையும் லேனா டிராவெல்ஸ் முழுமையாக நிர்வகிக்கிறது.",
+    "package.train_desc":
+      "காசி, கயா, போத் கயா மற்றும் பிரயாக்ராஜைக் கவர் செய்யும் வசதியான ரயில் பயணம் — தங்குதல், உணவு மற்றும் உள்ளூர் சுற்றுப்பயணம் ஏற்பாடு செய்யப்பட்டுள்ளது.",
+    "package.flight_desc":
+      "அதே புனித சுற்றுப்பாதையை கவர் செய்யும் வேகமான மற்றும் வசதியான விமான பயணம் — முதியோர் யாத்ரிகர்களுக்கும் குறுகிய கால பயணங்களுக்கும் ஏற்றது.",
+    "package.flight_note":
+      "பருவகாலம் மற்றும் டிக்கெட் இருப்பு அடிப்படையில் — இறுதி கட்டணம் முன்பதிவு நேரத்தில் உறுதிப்படுத்தப்படும்.",
+    "package.feature.train_tickets": "திரும்பும் ரயில் டிக்கெட்டுகள்",
+    "package.feature.accommodation_meals": "தங்குதல் மற்றும் உணவுகள்",
+    "package.feature.transport_temples": "உள்ளூர் போக்குவரத்து மற்றும் கோயில் பார்வைகள்",
+    "package.feature.guide": "அனுபவமிக்க சுற்றுப்பயண வழிகாட்டி",
+    "package.feature.flight_tickets": "திரும்பும் விமான டிக்கெட்டுகள்",
+    "package.feature.hotel_meals": "ஹோட்டல் தங்குதல் மற்றும் உணவுகள்",
+    "package.feature.airport_transfers": "விமான நிலைய இடமாற்றம் மற்றும் சுற்றுப்பயணம்",
+    "package.feature.assistant": "அர்ப்பணிப்பட்ட பயண உதவியாளர்",
+
     // Services
     "services.eyebrow": "எங்கள் சேவைகள்",
     "services.title": "பக்தியுடன் உருவாக்கப்பட்டது",
-    "services.subtitle": "உங்கள் தெய்வீகத்தில் கவனம் செலுவதற்கு, உங்கள் யாத்திரையின் ஒவ்வொரு விவரமும் கவனத்துடன் கையாளப்படுகிறது.",
+    "services.subtitle":
+      "உங்கள் தெய்வீகத்தில் கவனம் செலுவதற்கு, உங்கள் யாத்திரையின் ஒவ்வொரு விவரமும் கவனத்துடன் கையாளப்படுகிறது.",
     "services.travel_management": "முழுமையான பயண மேலாண்மை",
-    "services.travel_management_desc": "ஒவ்வொரு படியின் முடிவிலிருந்து முடிவு வரை திட்டமிடல் மற்றும் ஒருங்கொள்வு.",
+    "services.travel_management_desc":
+      "ஒவ்வொரு படியின் முடிவிலிருந்து முடிவு வரை திட்டமிடல் மற்றும் ஒருங்கொள்வு.",
     "services.accommodation": "தங்குதல் முன்பதிவு",
-    "services.accommodation_desc": "காட்கள் மற்றும் கோயில்களுக்கு அருகில் ஆறுதலான, சரிபாரித்த தங்குதல்கள்.",
+    "services.accommodation_desc":
+      "காட்கள் மற்றும் கோயில்களுக்கு அருகில் ஆறுதலான, சரிபாரித்த தங்குதல்கள்.",
     "services.food": "உணவு ஏற்பாடுகள்",
     "services.food_desc": "உங்கள் யாத்திரை முழுவதும் சத்விக சைவ உணவுகள்.",
     "services.guided": "வழிநடத்தப்பட்ட கோயில் பார்வைகள்",
@@ -548,14 +693,17 @@ const translations: Record<Language, Record<string, string>> = {
     "services.group_desc": "உங்கள் சக பக்தர்களின் வெப்பத்தில் பயணம் செய்யுங்கள்.",
     "services.safe": "பாதுகாப்பான மற்றும் ஆறுதலானது",
     "services.safe_desc": "நம்பகமான வாகனங்கள், சரிபாரித்த வழிகாட்டிகள், அர்ப்பணிப்பட்ட கவனம்.",
-    
+
     // Testimonials
     "testimonials.eyebrow": "பரிசுரிப்புகள்",
     "testimonials.title": "எங்கள் யாத்ரிகர்களின் வார்த்தைகள்",
-    "testimonials.review1": "மிகவும் நன்கு ஒழுங்கப்பட்ட பயணம் — ரயிலில் ஏறியதிலிருந்து இறுதி ஆரதி வரை எல்லாம் கவனித்கப்பட்டது. உண்மையில் ஒரு தெய்வீக அனுபவம்.",
-    "testimonials.review2": "இந்த பயண சேவையுடன் காசியை பார்வது சிறந்த அனுபவம். அறிவார்ந்த வழிகாட்டிகள், சுத்தமான தங்குதல், மற்றும் சத்விக உணவு.",
-    "testimonials.review3": "பிரயாக்ராஜைப் பார்க 15 ஆண்டுகள் விரும்பிய பிறகு, லேனா டிராவெல்ஸ் அதை எளிதமாக்கியது. அவர்கள் யாத்ரிகர்களை குடும்பத்தாக நடத்துகிறார்கள்.",
-    
+    "testimonials.review1":
+      "மிகவும் நன்கு ஒழுங்கப்பட்ட பயணம் — ரயிலில் ஏறியதிலிருந்து இறுதி ஆரதி வரை எல்லாம் கவனித்கப்பட்டது. உண்மையில் ஒரு தெய்வீக அனுபவம்.",
+    "testimonials.review2":
+      "இந்த பயண சேவையுடன் காசியை பார்வது சிறந்த அனுபவம். அறிவார்ந்த வழிகாட்டிகள், சுத்தமான தங்குதல், மற்றும் சத்விக உணவு.",
+    "testimonials.review3":
+      "பிரயாக்ராஜைப் பார்க 15 ஆண்டுகள் விரும்பிய பிறகு, லேனா டிராவெல்ஸ் அதை எளிதமாக்கியது. அவர்கள் யாத்ரிகர்களை குடும்பத்தாக நடத்துகிறார்கள்.",
+
     // WhyUs
     "whyus.eyebrow": "எங்களைத் தேர்வு செய்ய ஏன்",
     "whyus.title": "பக்தியின் வேறுபாடு",
@@ -567,11 +715,12 @@ const translations: Record<Language, Record<string, string>> = {
     "whyus.reason6": "24/7 சுற்றுப்பயண ஆதரவு",
     "whyus.lifetime": "ஒரு வாழ்க்கை யாத்திரை",
     "whyus.trusted": "2009 முதல் நம்பகமானது",
-    
+
     // Footer
     "footer.company": "லேனா டிராவெல்ஸ்",
     "footer.subtitle": "காசி யாத்திரை நிபுணர்கள்",
-    "footer.description": "15 ஆண்டுகளுக்கும் மேல் யாத்ரிகர்களை இந்தியாவின் புனித ஆன்மாவுக்கு வழிநடத்துகிறோம். காசி, கயா, புத்த கயா மற்றும் பிரயாக்ராஜிற்கான ஆன்மீக பயணங்களில் நிபுணர்கள்.",
+    "footer.description":
+      "15 ஆண்டுகளுக்கும் மேல் யாத்ரிகர்களை இந்தியாவின் புனித ஆன்மாவுக்கு வழிநடத்துகிறோம். காசி, கயா, புத்த கயா மற்றும் பிரயாக்ராஜிற்கான ஆன்மீக பயணங்களில் நிபுணர்கள்.",
     "footer.quick_links": "விரைவு இணைப்புகள்",
     "footer.about": "எங்களை பற்றி",
     "footer.destinations": "தேவாலயங்கள்",
@@ -581,11 +730,12 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.reach_us": "எங்களை அணுகுங்கள்",
     "footer.rights": "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
     "footer.om_namah": "ॐ நமஃ शिवாय",
-    
+
     // PilgrimMoments
     "moments.eyebrow": "மகிழ்ச்சியான பயண நினைவுகள்",
     "moments.title": "எங்கள் யாத்ரிகர் தருணங்கள்",
-    "moments.subtitle": "எங்கள் சமீபத்த யாத்திரைகளிலிருந்து உண்மை புகைப்பட்ட புகைகள் — புன்னல்கள், பிரார்த்தனைகள், மற்றும் எங்கள் யாத்ரிகர் குடும்பங்கள் பகிர்த்த மறக்கமாக்க முடியாத நினைவுகள்.",
+    "moments.subtitle":
+      "எங்கள் சமீபத்த யாத்திரைகளிலிருந்து உண்மை புகைப்பட்ட புகைகள் — புன்னல்கள், பிரார்த்தனைகள், மற்றும் எங்கள் யாத்ரிகர் குடும்பங்கள் பகிர்த்த மறக்கமாக்க முடியாத நினைவுகள்.",
     "moments.sangat": "காட்களில் சங்கத்",
     "moments.darshan": "கோயிலில் தரிசனம்",
     "moments.boarding": "யாத்திரை ரயிலில் ஏறுதல்",
@@ -601,25 +751,28 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.contact": "संपर्क",
     "nav.book_yatra": "यात्रा बुक करें",
     "nav.subtitle": "काशी यात्रा विशेषज्ञ",
-    
+
     // Hero
     "hero.title": "पवित्र यात्राएं",
     "hero.subtitle": "भारत के दिल की ओर",
-    "hero.description": "काशी, गया, प्रयागराज और अयोध्या के लिए हमारे विशेषज्ञों द्वारा तैयार किए गए तीर्थयात्रा पैकेज के साथ दिव्य आनंद का अनुभव करें।",
+    "hero.description":
+      "काशी, गया, प्रयागराज और अयोध्या के लिए हमारे विशेषज्ञों द्वारा तैयार किए गए तीर्थयात्रा पैकेज के साथ दिव्य आनंद का अनुभव करें।",
     "hero.cta": "अपनी यात्रा शुरू करें",
-    
+
     // About
     "about.eyebrow": "हमारे बारे में",
     "about.title": "15+ वर्षों की आध्यात्मिक सेवा",
-    "about.subtitle": "हम भक्तिभाव, सुविधा और भरोसेमंद यात्रा विशेषज्ञता के साथ तीर्थयात्रियों को काशी, अयोध्या, गया, बोधगया और प्रयागराज के पवित्र मार्गों पर ले जाते हैं।",
-    "about.description": "हम पवित्र स्थलों के बारे में गहरे ज्ञान के साथ विश्वसनीय काशी यात्रा विशेषज्ञ हैं। हमारी टीम यह सुनिश्चित करती है कि हर तीर्थयात्री अपनी यात्रा के दौरान शांति, आराम और दिव्य संबंध का अनुभव करे।",
-    
+    "about.subtitle":
+      "हम भक्तिभाव, सुविधा और भरोसेमंद यात्रा विशेषज्ञता के साथ तीर्थयात्रियों को काशी, अयोध्या, गया, बोधगया और प्रयागराज के पवित्र मार्गों पर ले जाते हैं।",
+    "about.description":
+      "हम पवित्र स्थलों के बारे में गहरे ज्ञान के साथ विश्वसनीय काशी यात्रा विशेषज्ञ हैं। हमारी टीम यह सुनिश्चित करती है कि हर तीर्थयात्री अपनी यात्रा के दौरान शांति, आराम और दिव्य संबंध का अनुभव करे।",
+
     // Destinations
     "dest.eyebrow": "पवित्र स्थल",
     "dest.title": "जहां आत्माएं शांति पाती हैं",
     "dest.subtitle": "उत्तर भारत के चार सबसे पवित्र शहरों के लिए तैयार की गई तीर्थयात्राएं।",
     "dest.explore": "जानें",
-    
+
     // Destination cards
     "dest.kashi.title": "काशी",
     "dest.kashi.subtitle": "वाराणसी",
@@ -636,14 +789,14 @@ const translations: Record<Language, Record<string, string>> = {
     "dest.ayodhya.title": "अयोध्या",
     "dest.ayodhya.subtitle": "उत्तर प्रदेश",
     "dest.ayodhya.desc": "भगवान राम की जन्मभूमि — भव्य राम मंदिर का घर।",
-    
+
     // Explore Modal
     "modal.explore": "जानें",
     "modal.loading": "पवित्र स्थल लोड हो रहे हैं...",
     "modal.close": "बंद करें",
     "modal.itinerary": "यात्रा योजना देखें",
     "modal.book": "इस यात्रा को बुक करें →",
-    
+
     // Gallery
     "gallery.eyebrow": "गैलरी",
     "gallery.title": "पवित्र के झलक",
@@ -654,7 +807,7 @@ const translations: Record<Language, Record<string, string>> = {
     "gallery.alt_3": "काशी विश्वनाथ",
     "gallery.alt_4": "गंगा पर सूर्योदय",
     "gallery.alt_5": "शाश्वत घाट",
-    
+
     // Hero additional
     "hero.badge": "ॐ · 15+ वर्षों की विश्वसनीय तीर्थयात्राएं",
     "hero.title1": "दिव्य का अनुभव करें",
@@ -665,37 +818,45 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.pilgrims": "तीर्थयात्री",
     "hero.holy_cities": "पवित्र शहर",
     "hero.scroll": "स्क्रॉल करें",
-    
+
     // About additional
     "about.years_exp": "वर्षों का अनुभव",
     "about.happy_pilgrims": "खुश तीर्थयात्री",
     "about.managed_tours": "पूरी तरह से प्रबंधित टूर",
-    
+
     // Kashi places
     "place.kashi.vishwanath.name": "काशी विश्वनाथ मंदिर",
-    "place.kashi.vishwanath.desc": "बारह ज्योतिर्लिंगों में से एक, भगवान शिव को समर्पित वाराणसी का आध्यात्मिक हृदय।",
+    "place.kashi.vishwanath.desc":
+      "बारह ज्योतिर्लिंगों में से एक, भगवान शिव को समर्पित वाराणसी का आध्यात्मिक हृदय।",
     "place.kashi.dashashwamedh.name": "दशाश्वमेध घाट",
     "place.kashi.dashashwamedh.desc": "सबसे जीवंत घाट जहां हर शाम प्रसिद्ध गंगा आरती होती है।",
     "place.kashi.ganga_aarti.name": "गंगा आरती",
-    "place.kashi.ganga_aarti.desc": "पवित्र गंगा के तट पर पुजारियों द्वारा किया जाने वाला एक मंत्रमुग्ध अग्नि अनुष्ठान।",
+    "place.kashi.ganga_aarti.desc":
+      "पवित्र गंगा के तट पर पुजारियों द्वारा किया जाने वाला एक मंत्रमुग्ध अग्नि अनुष्ठान।",
     "place.kashi.assi.name": "अस्सी घाट",
     "place.kashi.assi.desc": "एक शांत दक्षिणी घाट — सूर्योदय योग और शांत चिंतन के लिए उपयुक्त।",
     "place.kashi.manikarnika.name": "मणिकर्णिका घाट",
     "place.kashi.manikarnika.desc": "पवित्र श्मशान घाट जो मोक्ष देता है — पुनर्जन्म से मुक्ति।",
     "place.kashi.sarnath.name": "सारनाथ",
-    "place.kashi.sarnath.desc": "जहां भगवान बुद्ध ने अपना पहला उपदेश दिया — प्राचीन स्तूपों और संग्रहालयों का घर।",
+    "place.kashi.sarnath.desc":
+      "जहां भगवान बुद्ध ने अपना पहला उपदेश दिया — प्राचीन स्तूपों और संग्रहालयों का घर।",
     "place.kashi.tulsi.name": "तुलसी मानस मंदिर",
-    "place.kashi.tulsi.desc": "संगमरमर मंदिर जहां तुलसीदास ने रामचरितमानस की रचना की, हरे-भरे उद्यानों से घिरा हुआ।",
+    "place.kashi.tulsi.desc":
+      "संगमरमर मंदिर जहां तुलसीदास ने रामचरितमानस की रचना की, हरे-भरे उद्यानों से घिरा हुआ।",
     "place.kashi.bhu.name": "बनारस हिंदू विश्वविद्यालय",
-    "place.kashi.bhu.desc": "एक विशाल कैंपस जिसमें सुंदर नया विश्वनाथ मंदिर और भारत कला भवन संग्रहालय है।",
+    "place.kashi.bhu.desc":
+      "एक विशाल कैंपस जिसमें सुंदर नया विश्वनाथ मंदिर और भारत कला भवन संग्रहालय है।",
     "place.kashi.ramnagar.name": "रामनगर किला",
-    "place.kashi.ramnagar.desc": "काशी की शाही विरासत प्रदर्शित करने वाला 18वीं सदी का नदी किनारे का किला और संग्रहालय।",
+    "place.kashi.ramnagar.desc":
+      "काशी की शाही विरासत प्रदर्शित करने वाला 18वीं सदी का नदी किनारे का किला और संग्रहालय।",
     "place.kashi.kaal.name": "काल भैरव मंदिर",
-    "place.kashi.kaal.desc": "काशी के उग्र रक्षक का प्राचीन मंदिर — हर भक्त तीर्थयात्री द्वारा देखा जाता है।",
-    
+    "place.kashi.kaal.desc":
+      "काशी के उग्र रक्षक का प्राचीन मंदिर — हर भक्त तीर्थयात्री द्वारा देखा जाता है।",
+
     // Gaya places
     "place.gaya.vishnupad.name": "विष्णुपाद मंदिर",
-    "place.gaya.vishnupad.desc": "भगवान विष्णु के पदचिह्न को चिह्नित करता है — गया का आध्यात्मिक केंद्र।",
+    "place.gaya.vishnupad.desc":
+      "भगवान विष्णु के पदचिह्न को चिह्नित करता है — गया का आध्यात्मिक केंद्र।",
     "place.gaya.falgu.name": "फल्गु नदी",
     "place.gaya.falgu.desc": "पवित्र नदी जहां पूर्वजों के लिए पिंड दान अनुष्ठान किए जाते हैं।",
     "place.gaya.mangla.name": "मंगला गौरी मंदिर",
@@ -703,18 +864,23 @@ const translations: Record<Language, Record<string, string>> = {
     "place.gaya.akshayavat.name": "अक्षयवट",
     "place.gaya.akshayavat.desc": "अनंत बरगद का पेड़ जहां अंतिम पिंड दान नैवेद्य किए जाते हैं।",
     "place.gaya.brahmayoni.name": "ब्रह्मयोनी पहाड़ी",
-    "place.gaya.brahmayoni.desc": "424 पत्थर की सीढ़ियां गया के पैनोरमिक दृश्यों के साथ एक पवित्र पहाड़ी की ओर ले जाती हैं।",
+    "place.gaya.brahmayoni.desc":
+      "424 पत्थर की सीढ़ियां गया के पैनोरमिक दृश्यों के साथ एक पवित्र पहाड़ी की ओर ले जाती हैं।",
     "place.gaya.surya.name": "सूर्य कुंड",
-    "place.gaya.surya.desc": "विष्णुपाद के पास पवित्र जल टैंक जिसमें चंद्रमा शक्तियां होने का विश्वास है।",
+    "place.gaya.surya.desc":
+      "विष्णुपाद के पास पवित्र जल टैंक जिसमें चंद्रमा शक्तियां होने का विश्वास है।",
     "place.gaya.bodhi.name": "बोधि वृक्ष (निकट)",
-    "place.gaya.bodhi.desc": "प्राचीन पेड़ जिसके नीचे बुद्ध ने ज्ञान प्राप्त किया, एक छोटी यात्रा दूर।",
+    "place.gaya.bodhi.desc":
+      "प्राचीन पेड़ जिसके नीचे बुद्ध ने ज्ञान प्राप्त किया, एक छोटी यात्रा दूर।",
     "place.gaya.pretshila.name": "प्रेतशिला पहाड़ी",
-    "place.gaya.pretshila.desc": "पूर्वज अनुष्ठानों के लिए पहाड़ी तीर्थ स्थल पैनोरमिक दृश्यों के साथ।",
+    "place.gaya.pretshila.desc":
+      "पूर्वज अनुष्ठानों के लिए पहाड़ी तीर्थ स्थल पैनोरमिक दृश्यों के साथ।",
     "place.gaya.ramshila.name": "रामशिला पहाड़ी",
     "place.gaya.ramshila.desc": "पाताल देवी मंदिर और शांत चलने वाले रास्तों के साथ पवित्र पहाड़ी।",
     "place.gaya.dungeshwari.name": "डुंगेश्वरी गुफाएं",
-    "place.gaya.dungeshwari.desc": "पहाड़ी गुफाएं जहां बुद्ध ने ज्ञान से पहले वर्षों तक ध्यान किया।",
-    
+    "place.gaya.dungeshwari.desc":
+      "पहाड़ी गुफाएं जहां बुद्ध ने ज्ञान से पहले वर्षों तक ध्यान किया।",
+
     // Bodhgaya places
     "place.bodhgaya.mahabodhi.name": "महाबोधि मंदिर",
     "place.bodhgaya.mahabodhi.desc": "यूनेस्को विश्व धरोहर स्थल जहां बुद्ध ने ज्ञान प्राप्त किया।",
@@ -729,19 +895,23 @@ const translations: Record<Language, Record<string, string>> = {
     "place.bodhgaya.tibetan.name": "तिब्बती कर्मा मंदिर",
     "place.bodhgaya.tibetan.desc": "एक शानदार धर्म चक्र और प्रार्थना पहियों का घर।",
     "place.bodhgaya.bhutanese.name": "रॉयल भूटानी मठ",
-    "place.bodhgaya.bhutanese.desc": "शानदार भूटानी मिट्टी की नक्काशी और भित्तिचित्रों का प्रदर्शन।",
+    "place.bodhgaya.bhutanese.desc":
+      "शानदार भूटानी मिट्टी की नक्काशी और भित्तिचित्रों का प्रदर्शन।",
     "place.bodhgaya.animeshlochan.name": "अनिमेश्लोचन चैत्य",
-    "place.bodhgaya.animeshlochan.desc": "जहां बुद्ध ने एक सप्ताह तक बोधि वृक्ष को धन्यवाद में देखा।",
+    "place.bodhgaya.animeshlochan.desc":
+      "जहां बुद्ध ने एक सप्ताह तक बोधि वृक्ष को धन्यवाद में देखा।",
     "place.bodhgaya.muchalinda.name": "मुचलिंदा झील",
-    "place.bodhgaya.muchalinda.desc": "पवित्र झील जहां तूफान के दौरान सर्प राजा ने बुद्ध को शरण दिया।",
+    "place.bodhgaya.muchalinda.desc":
+      "पवित्र झील जहां तूफान के दौरान सर्प राजा ने बुद्ध को शरण दिया।",
     "place.bodhgaya.museum.name": "पुरातत्व संग्रहालय",
     "place.bodhgaya.museum.desc": "पाल और गुप्त काल के अवशेष और मूर्तियों का घर।",
-    
+
     // Prayagraj places
     "place.prayagraj.sangam.name": "त्रिवेणी संगम",
     "place.prayagraj.sangam.desc": "गंगा, यमुना और पौराणिक सरस्वती का पवित्र संगम।",
     "place.prayagraj.fort.name": "इलाहाबाद किला",
-    "place.prayagraj.fort.desc": "अकबर द्वारा निर्मित शक्तिशाली मुगल किला, पवित्र अक्षयवट वृक्ष का घर।",
+    "place.prayagraj.fort.desc":
+      "अकबर द्वारा निर्मित शक्तिशाली मुगल किला, पवित्र अक्षयवट वृक्ष का घर।",
     "place.prayagraj.anand.name": "आनंद भवन",
     "place.prayagraj.anand.desc": "नेहरू परिवार का ऐतिहासिक पैतृक घर, अब एक संग्रहालय।",
     "place.prayagraj.hanuman.name": "हनुमान मंदिर (बड़े हनुमानजी)",
@@ -749,42 +919,55 @@ const translations: Record<Language, Record<string, string>> = {
     "place.prayagraj.khusro.name": "खुसरो बाग",
     "place.prayagraj.khusro.desc": "तीन शानदार बलुआ पत्थर के मकबरों वाला दीवारबद्ध मुगल बाग।",
     "place.prayagraj.cathedral.name": "ऑल सेंट्स कैथेड्रल",
-    "place.prayagraj.cathedral.desc": "शानदार 19वीं सदी का गोथिक शैली का कैथेड्रल, एक औपनिवेशिक युग का आश्चर्य।",
+    "place.prayagraj.cathedral.desc":
+      "शानदार 19वीं सदी का गोथिक शैली का कैथेड्रल, एक औपनिवेशिक युग का आश्चर्य।",
     "place.prayagraj.alopi.name": "अलोपी देवी मंदिर",
-    "place.prayagraj.alopi.desc": "अद्वितीय शक्ति पीठ मंदिर जहां एक लकड़ी की पालकी की पूजा की जाती है।",
+    "place.prayagraj.alopi.desc":
+      "अद्वितीय शक्ति पीठ मंदिर जहां एक लकड़ी की पालकी की पूजा की जाती है।",
     "place.prayagraj.mankameshwar.name": "मंकामेश्वर मंदिर",
-    "place.prayagraj.mankameshwar.desc": "यमुना के तट पर भक्तों की इच्छाओं को पूरा करने वाला प्राचीन शिव मंदिर।",
+    "place.prayagraj.mankameshwar.desc":
+      "यमुना के तट पर भक्तों की इच्छाओं को पूरा करने वाला प्राचीन शिव मंदिर।",
     "place.prayagraj.shankar.name": "शंकर विमान मंडपम",
     "place.prayagraj.shankar.desc": "संगम के पास चार मंजिला दक्षिण भारतीय शैली का मंदिर।",
     "place.prayagraj.kumbh.name": "कुंभ मेला मैदान",
-    "place.prayagraj.kumbh.desc": "विशाल पवित्र मैदान जो दुनिया के सबसे बड़े आध्यात्मिक सम्मेलन की मेजबानी करते हैं।",
-    
+    "place.prayagraj.kumbh.desc":
+      "विशाल पवित्र मैदान जो दुनिया के सबसे बड़े आध्यात्मिक सम्मेलन की मेजबानी करते हैं।",
+
     // Ayodhya places
     "place.ayodhya.ram.name": "राम मंदिर",
-    "place.ayodhya.ram.desc": "भगवान राम के जन्मस्थान को चिह्नित करने वाला भव्य मंदिर — अयोध्या का आध्यात्मिक हृदय।",
+    "place.ayodhya.ram.desc":
+      "भगवान राम के जन्मस्थान को चिह्नित करने वाला भव्य मंदिर — अयोध्या का आध्यात्मिक हृदय।",
     "place.ayodhya.hanuman_garhi.name": "हनुमान गढ़ी",
-    "place.ayodhya.hanuman_garhi.desc": "अयोध्या के रक्षक देवता भगवान हनुमान का पहाड़ी मंदिर, 76 सीढ़ियों से पहुंचा जाता है।",
+    "place.ayodhya.hanuman_garhi.desc":
+      "अयोध्या के रक्षक देवता भगवान हनुमान का पहाड़ी मंदिर, 76 सीढ़ियों से पहुंचा जाता है।",
     "place.ayodhya.kanak.name": "कनक भवन",
-    "place.ayodhya.kanak.desc": "सीता को भेंट किया गया सुंदर मंदिर, राम और सीता की सुनहरी मुकुट वाली मूर्तियों से सजाया गया।",
+    "place.ayodhya.kanak.desc":
+      "सीता को भेंट किया गया सुंदर मंदिर, राम और सीता की सुनहरी मुकुट वाली मूर्तियों से सजाया गया।",
     "place.ayodhya.nageshwarnath.name": "नागेश्वरनाथ मंदिर",
-    "place.ayodhya.nageshwarnath.desc": "प्राचीन शिव मंदिर जो भगवान राम के पुत्र कुश द्वारा स्थापित माना जाता है।",
+    "place.ayodhya.nageshwarnath.desc":
+      "प्राचीन शिव मंदिर जो भगवान राम के पुत्र कुश द्वारा स्थापित माना जाता है।",
     "place.ayodhya.paidi.name": "राम की पैड़ी",
-    "place.ayodhya.paidi.desc": "सरयू नदी पर घाटों की एक श्रृंखला, शाम की आरती के दौरान सुंदर रूप से चमकती है।",
+    "place.ayodhya.paidi.desc":
+      "सरयू नदी पर घाटों की एक श्रृंखला, शाम की आरती के दौरान सुंदर रूप से चमकती है।",
     "place.ayodhya.saryu.name": "सरयू नदी",
-    "place.ayodhya.saryu.desc": "अयोध्या की पवित्र नदी जहां तीर्थयात्री पवित्र स्नान करते हैं और प्रार्थना करते हैं।",
+    "place.ayodhya.saryu.desc":
+      "अयोध्या की पवित्र नदी जहां तीर्थयात्री पवित्र स्नान करते हैं और प्रार्थना करते हैं।",
     "place.ayodhya.treta.name": "त्रेता के ठाकुर",
-    "place.ayodhya.treta.desc": "प्राचीन मंदिर जिसमें मूर्तियां हैं जो भगवान राम के समय की मानी जाती हैं।",
+    "place.ayodhya.treta.desc":
+      "प्राचीन मंदिर जिसमें मूर्तियां हैं जो भगवान राम के समय की मानी जाती हैं।",
     "place.ayodhya.dashrath.name": "दशरथ महल",
     "place.ayodhya.dashrath.desc": "भगवान राम के पिता राजा दशरथ का शाही निवास, अब एक शांत मंदिर।",
     "place.ayodhya.guptar.name": "गुप्तार घाट",
     "place.ayodhya.guptar.desc": "शांत नदी तटीय घाट जहां भगवान राम ने जल समाधि ली माना जाता है।",
     "place.ayodhya.bharat.name": "भरत कुंड",
-    "place.ayodhya.bharat.desc": "पवित्र तालाब जहां भरत ने भगवान राम की वापसी की प्रतीक्षा में तपस्या की।",
-    
+    "place.ayodhya.bharat.desc":
+      "पवित्र तालाब जहां भरत ने भगवान राम की वापसी की प्रतीक्षा में तपस्या की।",
+
     // Contact
     "contact.eyebrow": "संपर्क करें",
     "contact.title": "अपनी यात्रा शुरू करें",
-    "contact.subtitle": "अपनी तीर्थयात्रा का सपना हमें बताएं। हम आपके लिए एक आध्यात्मिक यात्रा तैयार करेंगे।",
+    "contact.subtitle":
+      "अपनी तीर्थयात्रा का सपना हमें बताएं। हम आपके लिए एक आध्यात्मिक यात्रा तैयार करेंगे।",
     "contact.call_us": "हमें कॉल करें",
     "contact.email": "ईमेल",
     "contact.office": "कार्यालय",
@@ -801,18 +984,28 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.message_placeholder": "अपनी यात्रा की तारीख और समूह आकार के बारे में हमें बताएं...",
     "contact.send": "पूछताछ भेजें",
     "contact.sent": "✓ हम जल्द ही संपर्क करेंगे",
-    
-    // Package
+    "contact.sending": "भेज रहे हैं...",
+    "contact.select_package": "एक पैकेज चुनें",
+    "contact.error_fields": "कृपया सभी आवश्यक फ़ील्ड भरें।",
+    "contact.error_send": "इस समय आपकी पूछताछ भेजने में असमर्थ। कृपया बाद में पुनः प्रयास करें।",
+    "contact.success":
+      "लेना ट्रैवल्स से संपर्क करने के लिए धन्यवाद। हम जल्द ही आपसे संपर्क करेंगे।",
+
+    // Package (Hindi)
     "package.eyebrow": "विशेष पैकेज",
     "package.title": "काशी यात्रा पवित्र पैकेज",
-    "package.subtitle": "दो सावधानीपूर्वक तैयार किए गए तीर्थयात्रा अनुभव — आपके दरवाजे से घाटों तक पूरी तरह से प्रबंधित।",
+    "package.subtitle":
+      "दो सावधानीपूर्वक तैयार किए गए तीर्थयात्रा अनुभव — आपके दरवाजे से घाटों तक पूरी तरह से प्रबंधित।",
     "package.most_popular": "सबसे लोकप्रिय",
     "package.train": "ट्रेन पैकेज",
     "package.flight": "फ्लाइट पैकेज",
     "package.days": "दिन",
     "package.per_person": "प्रति व्यक्ति",
+    "package.avg_amount": "औसत राशि",
     "package.premium": "प्रीमियम तेज तीर्थयात्रा — मूल्य पर अनुरोध",
     "package.book_now": "अभी बुक करें",
+    "package.book_train": "ट्रेन पैकेज बुक करें",
+    "package.book_flight": "फ्लाइट कोटेशन पाएं",
     "package.everything_included": "सब कुछ शामिल है",
     "package.travel": "यात्रा (ट्रेन / फ्लाइट)",
     "package.accommodation": "आरामदायक आवास",
@@ -820,12 +1013,28 @@ const translations: Record<Language, Record<string, string>> = {
     "package.transport": "स्थानीय परिवहन",
     "package.visits": "मंदिर दर्शन",
     "package.guided": "मार्गदर्शित यात्रा",
-    "package.managed": "ठहरने और भोजन सहित सभी व्यवस्थाएं पूरी तरह से लेना ट्रैवल्स द्वारा प्रबंधित हैं।",
-    
+    "package.managed":
+      "ठहरने और भोजन सहित सभी व्यवस्थाएं पूरी तरह से लेना ट्रैवल्स द्वारा प्रबंधित हैं।",
+    "package.train_desc":
+      "काशी, गया, बोध गया और प्रयागराज को कवर करने वाली आरामदायक रेल यात्रा — ठहरने, भोजन और स्थानीय भ्रमण की व्यवस्था के साथ।",
+    "package.flight_desc":
+      "उसी पवित्र सर्किट को कवर करने वाली तेज और अधिक आरामदायक हवाई यात्रा — बुजुर्ग तीर्थयात्रियों और कम अवधि की यात्राओं के लिए आदर्श।",
+    "package.flight_note":
+      "मौसम और टिकट उपलब्धता के आधार पर — बुकिंग के समय अंतिम किराया की पुष्टि।",
+    "package.feature.train_tickets": "वापसी ट्रेन टिकट",
+    "package.feature.accommodation_meals": "आवास और भोजन",
+    "package.feature.transport_temples": "स्थानीय परिवहन और मंदिर दर्शन",
+    "package.feature.guide": "अनुभवी टूर गाइड",
+    "package.feature.flight_tickets": "वापसी फ्लाइट टिकट",
+    "package.feature.hotel_meals": "होटल ठहरना और भोजन",
+    "package.feature.airport_transfers": "हवाई अड्डा स्थानांतरण और भ्रमण",
+    "package.feature.assistant": "समर्पित यात्रा सहायक",
+
     // Services
     "services.eyebrow": "हमारी सेवाएं",
     "services.title": "भक्ति के साथ",
-    "services.subtitle": "आपकी तीर्थयात्रा का हर विवरण देखभाल के साथ संभाला जाता है, ताकि आप दिव्य पर ध्यान केंद्रित कर सकें।",
+    "services.subtitle":
+      "आपकी तीर्थयात्रा का हर विवरण देखभाल के साथ संभाला जाता है, ताकि आप दिव्य पर ध्यान केंद्रित कर सकें।",
     "services.travel_management": "पूर्ण यात्रा प्रबंधन",
     "services.travel_management_desc": "हर कदम की अंत से शुरुआत तक योजना और समन्वय।",
     "services.accommodation": "आवास बुकिंग",
@@ -838,14 +1047,17 @@ const translations: Record<Language, Record<string, string>> = {
     "services.group_desc": "अपने साथी भक्तों की गर्म कंपनी में यात्रा करें।",
     "services.safe": "सुरक्षित और आरामदायक",
     "services.safe_desc": "विश्वसनीय वाहन, सत्यापित गाइड, समर्पित देखभाल।",
-    
+
     // Testimonials
     "testimonials.eyebrow": "समीक्षाएं",
     "testimonials.title": "हमारे तीर्थयात्रियों के शब्द",
-    "testimonials.review1": "बहुत अच्छी तरह से व्यवस्थित यात्रा — ट्रेन में चढ़ने से लेकर अंतिम आरती तक सब कुछ देखभाल किया गया। वास्तव में एक दिव्य अनुभव।",
-    "testimonials.review2": "इस यात्रा सेवा के साथ काशी की यात्रा का सबसे अच्छा अनुभव। ज्ञानवान गाइड, साफ ठहरना, और शुद्ध सात्विक भोजन।",
-    "testimonials.review3": "प्रयागराज की यात्रा की 15 वर्षों की इच्छा के बाद, लेना ट्रैवल्स ने इसे आसान बना दिया। वे तीर्थयात्रियों को परिवार की तरह व्यवहार करते हैं।",
-    
+    "testimonials.review1":
+      "बहुत अच्छी तरह से व्यवस्थित यात्रा — ट्रेन में चढ़ने से लेकर अंतिम आरती तक सब कुछ देखभाल किया गया। वास्तव में एक दिव्य अनुभव।",
+    "testimonials.review2":
+      "इस यात्रा सेवा के साथ काशी की यात्रा का सबसे अच्छा अनुभव। ज्ञानवान गाइड, साफ ठहरना, और शुद्ध सात्विक भोजन।",
+    "testimonials.review3":
+      "प्रयागराज की यात्रा की 15 वर्षों की इच्छा के बाद, लेना ट्रैवल्स ने इसे आसान बना दिया। वे तीर्थयात्रियों को परिवार की तरह व्यवहार करते हैं।",
+
     // WhyUs
     "whyus.eyebrow": "हमें क्यों चुनें",
     "whyus.title": "भक्ति का अंतर",
@@ -857,11 +1069,12 @@ const translations: Record<Language, Record<string, string>> = {
     "whyus.reason6": "24/7 यात्रा समर्थन",
     "whyus.lifetime": "जीवन की एक तीर्थयात्रा",
     "whyus.trusted": "2009 से विश्वसनीय",
-    
+
     // Footer
     "footer.company": "लेना ट्रैवल्स",
     "footer.subtitle": "काशी यात्रा विशेषज्ञ",
-    "footer.description": "15 से अधिक वर्षों से तीर्थयात्रियों को भारत के पवित्र आत्मा की ओर मार्गदर्शन। काशी, गया, बुद्ध गया और प्रयागराज के आध्यात्मिक यात्राओं में विशेषज्ञ।",
+    "footer.description":
+      "15 से अधिक वर्षों से तीर्थयात्रियों को भारत के पवित्र आत्मा की ओर मार्गदर्शन। काशी, गया, बुद्ध गया और प्रयागराज के आध्यात्मिक यात्राओं में विशेषज्ञ।",
     "footer.quick_links": "त्वरित लिंक",
     "footer.about": "हमारे बारे में",
     "footer.destinations": "तीर्थस्थल",
@@ -871,11 +1084,12 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.reach_us": "हमसे संपर्क करें",
     "footer.rights": "सर्वाधिकार सुरक्षित।",
     "footer.om_namah": "ॐ नमः शिवाय",
-    
+
     // PilgrimMoments
     "moments.eyebrow": "खुशी की यात्रा यादें",
     "moments.title": "हमारे तीर्थयात्री क्षण",
-    "moments.subtitle": "हमारी हालिया यात्राओं से वास्तविक फोटो — मुस्कान, प्रार्थनाएं, और हमारे तीर्थयात्री परिवारों द्वारा साझा की गई अविस्मरणीय यादें।",
+    "moments.subtitle":
+      "हमारी हालिया यात्राओं से वास्तविक फोटो — मुस्कान, प्रार्थनाएं, और हमारे तीर्थयात्री परिवारों द्वारा साझा की गई अविस्मरणीय यादें।",
     "moments.sangat": "घाटों पर संगत",
     "moments.darshan": "मंदिर में दर्शन",
     "moments.boarding": "यात्रा ट्रेन में चढ़ना",

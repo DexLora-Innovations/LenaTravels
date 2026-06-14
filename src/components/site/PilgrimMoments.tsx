@@ -22,12 +22,7 @@ import p15 from "@/assets/pilgrim-15.jpeg";
 import p16 from "@/assets/pilgrim-16.jpeg";
 
 // ── Photo list — displayed in exact order 01 → 16 ───────────────────────────
-const photos = [
-  p01, p02, p03, p04,
-  p05, p06, p07, p08,
-  p09, p10, p11, p12,
-  p13, p14, p15, p16,
-];
+const photos = [p01, p02, p03, p04, p05, p06, p07, p08, p09, p10, p11, p12, p13, p14, p15, p16];
 
 export function PilgrimMoments() {
   const [open, setOpen] = useState<string | null>(null);
@@ -38,7 +33,11 @@ export function PilgrimMoments() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("moments.eyebrow")}
-          title={<>Our <em className="not-italic text-gradient-gold">Pilgrim Moments</em></>}
+          title={
+            <>
+              Our <em className="not-italic text-gradient-gold">Pilgrim Moments</em>
+            </>
+          }
           subtitle={t("moments.subtitle")}
         />
 
@@ -67,9 +66,7 @@ export function PilgrimMoments() {
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               {/* Dark overlay — only on hover, never hides image at rest */}
-              <div
-                className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               <span className="absolute bottom-2 right-2 bg-black/50 text-white text-[10px] font-medium px-2 py-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                 {String(i + 1).padStart(2, "0")} / 16
               </span>

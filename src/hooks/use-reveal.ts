@@ -11,7 +11,7 @@ export function useReveal() {
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.12 },
     );
 
     // Observe all current reveal elements

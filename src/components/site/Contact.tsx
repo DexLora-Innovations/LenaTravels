@@ -19,12 +19,16 @@ export function Contact() {
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("contact.eyebrow")}
-          title={<>Begin Your <em className="not-italic text-gradient-gold">Yatra</em></>}
+          title={
+            <>
+              Begin Your <em className="not-italic text-gradient-gold">Yatra</em>
+            </>
+          }
           subtitle={t("contact.subtitle")}
         />
 
         <div className="mt-20 grid lg:grid-cols-5 gap-10">
-            <div className="lg:col-span-2 space-y-6 min-w-0">
+          <div className="lg:col-span-2 space-y-6 min-w-0">
             {[
               {
                 id: "phone",
@@ -44,7 +48,8 @@ export function Contact() {
                 id: "office",
                 icon: MapPin,
                 label: t("contact.office"),
-                value: "No. 1A, Ground Floor, Vinayagapuram Main Road, Vinayagapuram, Ambattur, Chennai – 600053",
+                value:
+                  "No. 1A, Ground Floor, Vinayagapuram Main Road, Vinayagapuram, Ambattur, Chennai – 600053",
                 href: null,
               },
             ].map(({ id, icon: Icon, label, value, href }) => (
@@ -56,7 +61,9 @@ export function Contact() {
                   <Icon className="block h-5 w-5 shrink-0" strokeWidth={2} />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">{label}</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">
+                    {label}
+                  </div>
                   {href ? (
                     <a
                       href={href}
@@ -65,7 +72,9 @@ export function Contact() {
                       {value}
                     </a>
                   ) : (
-                    <div className="mt-1 font-display text-lg text-foreground leading-snug break-words">{value}</div>
+                    <div className="mt-1 font-display text-lg text-foreground leading-snug break-words">
+                      {value}
+                    </div>
                   )}
                 </div>
               </div>
@@ -77,9 +86,8 @@ export function Contact() {
               e.preventDefault();
               setError(null);
 
-              // Basic validation
               if (!name.trim() || !phone.trim() || !packageInterest.trim() || !message.trim()) {
-                setError("Please fill out all required fields.");
+                setError(t("contact.error_fields"));
                 return;
               }
 
@@ -102,26 +110,45 @@ export function Contact() {
                 setMessage("");
               } catch (err) {
                 console.error("EmailJS send error:", err);
-                setError("Unable to send your inquiry at the moment. Please try again later.");
+                setError(t("contact.error_send"));
               } finally {
                 setLoading(false);
               }
             }}
             className="reveal lg:col-span-3 bg-card rounded-2xl p-8 border border-border shadow-soft space-y-5 min-w-0"
+            aria-label={t("contact.title")}
           >
             <div className="grid sm:grid-cols-2 gap-5">
-              <Field label={t("contact.name")} name="name" value={name} onChange={(v) => setName(v)} />
-              <Field label={t("contact.phone")} name="phone" type="tel" value={phone} onChange={(v) => setPhone(v)} />
+              <Field
+                label={t("contact.name")}
+                name="name"
+                value={name}
+                onChange={(v) => setName(v)}
+              />
+              <Field
+                label={t("contact.phone")}
+                name="phone"
+                type="tel"
+                value={phone}
+                onChange={(v) => setPhone(v)}
+              />
             </div>
             <div>
-              <label className="text-xs uppercase tracking-widest text-muted-foreground">{t("contact.package_interest")}</label>
+              <label
+                htmlFor="package-select"
+                className="text-xs uppercase tracking-widest text-muted-foreground"
+              >
+                {t("contact.package_interest")}
+              </label>
               <select
+                id="package-select"
                 value={packageInterest}
                 onChange={(e) => setPackageInterest(e.target.value)}
                 required
+                aria-label={t("contact.package_interest")}
                 className="mt-2 w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:border-accent focus:outline-none transition-colors"
               >
-                <option value="">Select a package</option>
+                <option value="">{t("contact.select_package")}</option>
                 <option value={t("contact.kashi_train")}>{t("contact.kashi_train")}</option>
                 <option value={t("contact.kashi_flight")}>{t("contact.kashi_flight")}</option>
                 <option value={t("contact.gaya")}>{t("contact.gaya")}</option>
@@ -131,28 +158,40 @@ export function Contact() {
               </select>
             </div>
             <div>
-              <label className="text-xs uppercase tracking-widest text-muted-foreground">{t("contact.message")}</label>
+              <label
+                htmlFor="contact-message"
+                className="text-xs uppercase tracking-widest text-muted-foreground"
+              >
+                {t("contact.message")}
+              </label>
               <textarea
+                id="contact-message"
                 rows={4}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="mt-2 w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:border-accent focus:outline-none transition-colors resize-none"
                 placeholder={t("contact.message_placeholder")}
                 required
+                aria-label={t("contact.message")}
               />
             </div>
             {error && (
-              <div className="text-sm text-destructive">{error}</div>
+              <div className="text-sm text-destructive" role="alert">
+                {error}
+              </div>
             )}
             {sent && (
-              <div className="text-sm text-green-600">Thank you for contacting Lena Travels. We will get back to you shortly.</div>
+              <div className="text-sm text-green-600" role="status">
+                {t("contact.success")}
+              </div>
             )}
             <button
               type="submit"
               disabled={loading}
-              className={`w-full rounded-full bg-sunset px-8 py-4 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.02] ${loading ? "opacity-60 cursor-not-allowed" : ""}`}
+              aria-disabled={loading}
+              className={`w-full rounded-full bg-sunset px-8 py-4 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${loading ? "opacity-60 cursor-not-allowed" : ""}`}
             >
-              {loading ? "Sending..." : "Send Inquiry"}
+              {loading ? t("contact.sending") : t("contact.send")}
             </button>
           </form>
         </div>
@@ -174,16 +213,21 @@ function Field({
   value?: string;
   onChange?: (v: string) => void;
 }) {
+  const id = `field-${name}`;
   return (
     <div>
-      <label className="text-xs uppercase tracking-widest text-muted-foreground">{label}</label>
+      <label htmlFor={id} className="text-xs uppercase tracking-widest text-muted-foreground">
+        {label}
+      </label>
       <input
+        id={id}
         name={name}
         type={type}
         required
         value={value}
         onChange={(e) => onChange && onChange(e.target.value)}
-        className="mt-2 w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:border-accent focus:outline-none transition-colors"
+        aria-label={label}
+        className="mt-2 w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:border-accent focus:outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       />
     </div>
   );

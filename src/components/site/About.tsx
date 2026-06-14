@@ -16,7 +16,11 @@ export function About() {
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("about.eyebrow")}
-          title={<>Devoted to Your <em className="not-italic text-gradient-gold">Sacred Journey</em></>}
+          title={
+            <>
+              Devoted to Your <em className="not-italic text-gradient-gold">Sacred Journey</em>
+            </>
+          }
           subtitle={t("about.subtitle")}
         />
 
@@ -31,7 +35,9 @@ export function About() {
                 <Icon className="h-6 w-6" />
               </div>
               <div className="mt-6 font-display text-4xl text-foreground">{n}</div>
-              <div className="mt-2 text-sm uppercase tracking-widest text-muted-foreground">{t(lKey)}</div>
+              <div className="mt-2 text-sm uppercase tracking-widest text-muted-foreground">
+                {t(lKey)}
+              </div>
             </div>
           ))}
         </div>

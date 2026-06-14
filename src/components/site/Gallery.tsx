@@ -24,7 +24,11 @@ export function Gallery() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("gallery.eyebrow")}
-          title={<>Glimpses of the <em className="not-italic text-gradient-gold">Sacred</em></>}
+          title={
+            <>
+              Glimpses of the <em className="not-italic text-gradient-gold">Sacred</em>
+            </>
+          }
           subtitle={t("gallery.subtitle")}
         />
 

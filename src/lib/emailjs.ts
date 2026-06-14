@@ -7,7 +7,9 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string;
 if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
   // Don't throw here to avoid breaking dev when env not configured,
   // but send will fail and surface an error to the caller.
-  console.warn("EmailJS env vars not set: VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY");
+  console.warn(
+    "EmailJS env vars not set: VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY",
+  );
 }
 
 init(PUBLIC_KEY);

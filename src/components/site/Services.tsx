@@ -20,7 +20,11 @@ export function Services() {
         <SectionHeading
           light
           eyebrow={t("services.eyebrow")}
-          title={<>Crafted with <em className="not-italic text-gradient-gold">Devotion</em></>}
+          title={
+            <>
+              Crafted with <em className="not-italic text-gradient-gold">Devotion</em>
+            </>
+          }
           subtitle={t("services.subtitle")}
         />
         <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

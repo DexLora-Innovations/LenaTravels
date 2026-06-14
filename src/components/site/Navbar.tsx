@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Flame, Menu, X, Globe } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage, type Language } from "@/contexts/LanguageContext";
 import {
   Select,
   SelectContent,
@@ -42,10 +42,14 @@ export function Navbar() {
             <Flame className="h-5 w-5" />
           </span>
           <span className="leading-tight">
-            <span className={`block font-display text-xl font-semibold ${scrolled ? "text-foreground" : "text-white"}`}>
+            <span
+              className={`block font-display text-xl font-semibold ${scrolled ? "text-foreground" : "text-white"}`}
+            >
               Lena Travels
             </span>
-            <span className={`block text-[10px] tracking-[0.3em] uppercase ${scrolled ? "text-muted-foreground" : "text-white/80"}`}>
+            <span
+              className={`block text-[10px] tracking-[0.3em] uppercase ${scrolled ? "text-muted-foreground" : "text-white/80"}`}
+            >
               {t("nav.subtitle")}
             </span>
           </span>
@@ -67,9 +71,9 @@ export function Navbar() {
         </ul>
 
         <div className="hidden lg:flex items-center gap-3">
-          <Select value={language} onValueChange={(value) => setLanguage(value as any)}>
-            <SelectTrigger className="w-[120px] h-9 text-sm">
-              <Globe className="h-4 w-4 mr-2" />
+          <Select value={language} onValueChange={(value) => setLanguage(value as Language)}>
+            <SelectTrigger className="w-[120px] h-9 text-sm" aria-label="Select language">
+              <Globe className="h-4 w-4 mr-2" aria-hidden="true" />
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -80,7 +84,7 @@ export function Navbar() {
           </Select>
           <a
             href="#contact"
-            className="inline-flex items-center rounded-full bg-sunset px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-105"
+            className="inline-flex items-center rounded-full bg-sunset px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             {t("nav.book_yatra")}
           </a>
@@ -110,9 +114,9 @@ export function Navbar() {
               </li>
             ))}
             <div className="flex items-center gap-3 mt-2">
-              <Select value={language} onValueChange={(value) => setLanguage(value as any)}>
-                <SelectTrigger className="w-[120px] h-9 text-sm">
-                  <Globe className="h-4 w-4 mr-2" />
+              <Select value={language} onValueChange={(value) => setLanguage(value as Language)}>
+                <SelectTrigger className="w-[120px] h-9 text-sm" aria-label="Select language">
+                  <Globe className="h-4 w-4 mr-2" aria-hidden="true" />
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
