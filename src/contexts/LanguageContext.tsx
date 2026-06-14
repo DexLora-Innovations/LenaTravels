@@ -31,7 +31,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // About
     "about.eyebrow": "About Us",
-    "about.title": "15+ Years of Spiritual Service",
+    "about.title": "Devoted to Your *Sacred Journey*",
     "about.subtitle":
       "Guiding pilgrims through the sacred paths of Kashi, Ayodhya, Gaya, Bodh Gaya and Prayagraj with devotion, comfort and trusted travel expertise.",
     "about.description":
@@ -39,7 +39,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Destinations
     "dest.eyebrow": "Holy Destinations",
-    "dest.title": "Where Souls Find Peace",
+    "dest.title": "Where *Souls* Find Peace",
     "dest.subtitle": "Curated pilgrimages to the four most sacred cities of North India.",
     "dest.explore": "Explore",
 
@@ -246,7 +246,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Contact
     "contact.eyebrow": "Contact Us",
-    "contact.title": "Begin Your Yatra",
+    "contact.title": "Begin Your *Yatra*",
     "contact.subtitle":
       "Tell us about your pilgrimage dream. We'll craft a soulful journey for you.",
     "contact.call_us": "Call Us",
@@ -273,7 +273,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Package
     "package.eyebrow": "Featured Package",
-    "package.title": "Kashi Yatra Sacred Package",
+    "package.title": "Kashi Yatra *Sacred Package*",
     "package.subtitle":
       "Two carefully crafted pilgrimage experiences — fully managed from your doorstep to the ghats.",
     "package.most_popular": "Most Popular",
@@ -312,7 +312,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Services
     "services.eyebrow": "Our Services",
-    "services.title": "Crafted with Devotion",
+    "services.title": "Crafted with *Devotion*",
     "services.subtitle":
       "Every detail of your pilgrimage handled with care, so you can focus on the divine.",
     "services.travel_management": "Complete Travel Management",
@@ -330,7 +330,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Testimonials
     "testimonials.eyebrow": "Testimonials",
-    "testimonials.title": "Words from our Pilgrims",
+    "testimonials.title": "Words from our *Pilgrims*",
     "testimonials.review1":
       "Very well organized trip — everything was taken care of from boarding the train to the final aarti. Truly a divine experience.",
     "testimonials.review2":
@@ -340,7 +340,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // WhyUs
     "whyus.eyebrow": "Why Choose Us",
-    "whyus.title": "The Difference of Devotion",
+    "whyus.title": "The Difference of *Devotion*",
     "whyus.reason1": "15+ Years of Trusted Experience",
     "whyus.reason2": "Loved by Thousands of Pilgrims",
     "whyus.reason3": "Honest, Affordable Pricing",
@@ -367,7 +367,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // PilgrimMoments
     "moments.eyebrow": "Happy Journey Memories",
-    "moments.title": "Our Pilgrim Moments",
+    "moments.title": "Our *Pilgrim Moments*",
     "moments.subtitle":
       "Real photos from our recent yatras — smiles, prayers, and unforgettable memories shared by our pilgrim families.",
     "moments.sangat": "Sangat at the Ghats",
@@ -395,7 +395,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // About
     "about.eyebrow": "எங்களை பற்றி",
-    "about.title": "15+ ஆண்டுகள் ஆன்மீக சேவை",
+    "about.title": "உங்கள் *புனித பயணத்திற்காக* அர்ப்பணிக்கப்பட்டது",
     "about.subtitle":
       "காசி, அயோத்தி, கயா, போத் கயா மற்றும் பிரயாக்ராஜ் ஆகிய புனித பாதைகளில் பக்தி, வசதி மற்றும் நம்பகமான பயண நிபுணத்துவத்துடன் யாத்திரீகர்களை வழிநடத்துகிறோம்.",
     "about.description":
@@ -403,7 +403,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Destinations
     "dest.eyebrow": "புனித இடங்கள்",
-    "dest.title": "ஆன்மாக்கள் அமைதியைக் கண்டறியும் இடம்",
+    "dest.title": "*ஆன்மாக்கள்* அமைதியைக் கண்டறியும் இடம்",
     "dest.subtitle":
       "வட இந்தியாவின் நான்கு மிகவும் புனித நகரங்களுக்கான தயாரிக்கப்பட்ட யாத்திரைகள்.",
     "dest.explore": "ஆராய்வு",
@@ -607,7 +607,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Contact
     "contact.eyebrow": "தொடர்பு கொள்ளுங்கள்",
-    "contact.title": "உங்கள் யாத்திரையைத் தொடங்கவும்",
+    "contact.title": "உங்கள் *யாத்திரையைத்* தொடங்கவும்",
     "contact.subtitle":
       "உங்கள் யாத்திரை கனவை எங்களிடம் பகிருங்கள். உங்களுக்காக ஒரு ஆன்மீக பயணத்தை உருவாக்குவோம்.",
     "contact.call_us": "எங்களை அழைக்கவும்",
@@ -637,7 +637,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Package (Tamil)
     "package.eyebrow": "சிறப்பட்ட தொகுப்பு",
-    "package.title": "காசி யாத்திரை புனித தொகுப்பு",
+    "package.title": "காசி யாத்திரை *புனித தொகுப்பு*",
     "package.subtitle":
       "இரண்டு கவனமாக உருவாக்கப்பட்ட யாத்திரை அனுபவங்கள் — உங்கள் வாசலிலிருந்து காட்கள் வரை முழுமையாக நிர்வகிக்கப்பட்டவை.",
     "package.most_popular": "மிகவும் பிரபலமானது",
@@ -676,7 +676,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Services
     "services.eyebrow": "எங்கள் சேவைகள்",
-    "services.title": "பக்தியுடன் உருவாக்கப்பட்டது",
+    "services.title": "*பக்தியுடன்* உருவாக்கப்பட்டது",
     "services.subtitle":
       "உங்கள் தெய்வீகத்தில் கவனம் செலுவதற்கு, உங்கள் யாத்திரையின் ஒவ்வொரு விவரமும் கவனத்துடன் கையாளப்படுகிறது.",
     "services.travel_management": "முழுமையான பயண மேலாண்மை",
@@ -696,7 +696,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Testimonials
     "testimonials.eyebrow": "பரிசுரிப்புகள்",
-    "testimonials.title": "எங்கள் யாத்ரிகர்களின் வார்த்தைகள்",
+    "testimonials.title": "எங்கள் *யாத்ரிகர்களின்* வார்த்தைகள்",
     "testimonials.review1":
       "மிகவும் நன்கு ஒழுங்கப்பட்ட பயணம் — ரயிலில் ஏறியதிலிருந்து இறுதி ஆரதி வரை எல்லாம் கவனித்கப்பட்டது. உண்மையில் ஒரு தெய்வீக அனுபவம்.",
     "testimonials.review2":
@@ -706,7 +706,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // WhyUs
     "whyus.eyebrow": "எங்களைத் தேர்வு செய்ய ஏன்",
-    "whyus.title": "பக்தியின் வேறுபாடு",
+    "whyus.title": "*பக்தியின்* வேறுபாடு",
     "whyus.reason1": "15+ ஆண்டுகள் நம்பகமான அனுபவம்",
     "whyus.reason2": "ஆயிரக்கணக்கணம் யாத்ரிகர்களால் விரும்பப்பட்டது",
     "whyus.reason3": "நேர்மையான, மலிவான விலை",
@@ -733,7 +733,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // PilgrimMoments
     "moments.eyebrow": "மகிழ்ச்சியான பயண நினைவுகள்",
-    "moments.title": "எங்கள் யாத்ரிகர் தருணங்கள்",
+    "moments.title": "எங்கள் *யாத்ரிகர் தருணங்கள்*",
     "moments.subtitle":
       "எங்கள் சமீபத்த யாத்திரைகளிலிருந்து உண்மை புகைப்பட்ட புகைகள் — புன்னல்கள், பிரார்த்தனைகள், மற்றும் எங்கள் யாத்ரிகர் குடும்பங்கள் பகிர்த்த மறக்கமாக்க முடியாத நினைவுகள்.",
     "moments.sangat": "காட்களில் சங்கத்",
@@ -761,7 +761,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // About
     "about.eyebrow": "हमारे बारे में",
-    "about.title": "15+ वर्षों की आध्यात्मिक सेवा",
+    "about.title": "आपकी *पवित्र यात्रा* के लिए समर्पित",
     "about.subtitle":
       "हम भक्तिभाव, सुविधा और भरोसेमंद यात्रा विशेषज्ञता के साथ तीर्थयात्रियों को काशी, अयोध्या, गया, बोधगया और प्रयागराज के पवित्र मार्गों पर ले जाते हैं।",
     "about.description":
@@ -769,7 +769,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Destinations
     "dest.eyebrow": "पवित्र स्थल",
-    "dest.title": "जहां आत्माएं शांति पाती हैं",
+    "dest.title": "जहां *आत्माएं* शांति पाती हैं",
     "dest.subtitle": "उत्तर भारत के चार सबसे पवित्र शहरों के लिए तैयार की गई तीर्थयात्राएं।",
     "dest.explore": "जानें",
 
@@ -965,7 +965,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Contact
     "contact.eyebrow": "संपर्क करें",
-    "contact.title": "अपनी यात्रा शुरू करें",
+    "contact.title": "अपनी *यात्रा* शुरू करें",
     "contact.subtitle":
       "अपनी तीर्थयात्रा का सपना हमें बताएं। हम आपके लिए एक आध्यात्मिक यात्रा तैयार करेंगे।",
     "contact.call_us": "हमें कॉल करें",
@@ -993,7 +993,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Package (Hindi)
     "package.eyebrow": "विशेष पैकेज",
-    "package.title": "काशी यात्रा पवित्र पैकेज",
+    "package.title": "काशी यात्रा *पवित्र पैकेज*",
     "package.subtitle":
       "दो सावधानीपूर्वक तैयार किए गए तीर्थयात्रा अनुभव — आपके दरवाजे से घाटों तक पूरी तरह से प्रबंधित।",
     "package.most_popular": "सबसे लोकप्रिय",
@@ -1032,7 +1032,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Services
     "services.eyebrow": "हमारी सेवाएं",
-    "services.title": "भक्ति के साथ",
+    "services.title": "*भक्ति* के साथ",
     "services.subtitle":
       "आपकी तीर्थयात्रा का हर विवरण देखभाल के साथ संभाला जाता है, ताकि आप दिव्य पर ध्यान केंद्रित कर सकें।",
     "services.travel_management": "पूर्ण यात्रा प्रबंधन",
@@ -1050,7 +1050,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Testimonials
     "testimonials.eyebrow": "समीक्षाएं",
-    "testimonials.title": "हमारे तीर्थयात्रियों के शब्द",
+    "testimonials.title": "हमारे *तीर्थयात्रियों* के शब्द",
     "testimonials.review1":
       "बहुत अच्छी तरह से व्यवस्थित यात्रा — ट्रेन में चढ़ने से लेकर अंतिम आरती तक सब कुछ देखभाल किया गया। वास्तव में एक दिव्य अनुभव।",
     "testimonials.review2":
@@ -1060,7 +1060,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // WhyUs
     "whyus.eyebrow": "हमें क्यों चुनें",
-    "whyus.title": "भक्ति का अंतर",
+    "whyus.title": "*भक्ति* का अंतर",
     "whyus.reason1": "15+ वर्षों का विश्वसनीय अनुभव",
     "whyus.reason2": "हजारों तीर्थयात्रियों द्वारा पसंद किया गया",
     "whyus.reason3": "ईमानदार, सस्ती मूल्य निर्धारण",
@@ -1087,7 +1087,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // PilgrimMoments
     "moments.eyebrow": "खुशी की यात्रा यादें",
-    "moments.title": "हमारे तीर्थयात्री क्षण",
+    "moments.title": "हमारे *तीर्थयात्री क्षण*",
     "moments.subtitle":
       "हमारी हालिया यात्राओं से वास्तविक फोटो — मुस्कान, प्रार्थनाएं, और हमारे तीर्थयात्री परिवारों द्वारा साझा की गई अविस्मरणीय यादें।",
     "moments.sangat": "घाटों पर संगत",

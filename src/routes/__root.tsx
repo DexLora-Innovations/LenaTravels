@@ -1,6 +1,4 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
-
-import appCss from "../styles.css?url";
+import { Outlet, Link, createRootRoute } from "@tanstack/react-router";
 import { LanguageProvider, useLanguage } from "../contexts/LanguageContext";
 
 function NotFoundComponent() {
@@ -10,7 +8,7 @@ function NotFoundComponent() {
         <h1 className="text-7xl font-bold text-foreground">404</h1>
         <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
+          The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
         <div className="mt-6">
           <Link
@@ -24,54 +22,6 @@ function NotFoundComponent() {
     </div>
   );
 }
-
-export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lena Travels — Kashi Yatra Specialists" },
-      {
-        name: "description",
-        content:
-          "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages.",
-      },
-      { name: "author", content: "Lena Travels" },
-      { property: "og:title", content: "Lena Travels — Kashi Yatra Specialists" },
-      {
-        property: "og:description",
-        content:
-          "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Lena Travels — Kashi Yatra Specialists" },
-      {
-        name: "twitter:description",
-        content:
-          "15+ years of trusted spiritual travel to Kashi, Gaya, Buddha Gaya & Prayagraj. Fully managed Kashi Yatra packages.",
-      },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-      {
-        rel: "icon",
-        type: "image/svg+xml",
-        href: "/favicon.svg",
-      },
-      {
-        rel: "shortcut icon",
-        href: "/favicon.ico",
-      },
-    ],
-  }),
-  shellComponent: RootShell,
-  component: RootComponent,
-  notFoundComponent: NotFoundComponent,
-});
 
 /**
  * LangSync — keeps the <html lang> and data-lang attributes in sync with the
@@ -89,23 +39,16 @@ function LangSync() {
   return null;
 }
 
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <LanguageProvider>
-          <LangSync />
-          {children}
-        </LanguageProvider>
-        <Scripts />
-      </body>
-    </html>
-  );
-}
+export const Route = createRootRoute({
+  component: RootComponent,
+  notFoundComponent: NotFoundComponent,
+});
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <LanguageProvider>
+      <LangSync />
+      <Outlet />
+    </LanguageProvider>
+  );
 }

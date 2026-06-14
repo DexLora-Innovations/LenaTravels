@@ -33,11 +33,7 @@ export function PilgrimMoments() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("moments.eyebrow")}
-          title={
-            <>
-              Our <em className="not-italic text-gradient-gold">Pilgrim Moments</em>
-            </>
-          }
+          title={t("moments.title")}
           subtitle={t("moments.subtitle")}
         />
 

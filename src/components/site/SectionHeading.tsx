@@ -1,3 +1,21 @@
+function formatTitle(text: string) {
+  const parts = text.split(/\*(.*?)\*/g);
+  return (
+    <>
+      {parts.map((part, index) => {
+        if (index % 2 === 1) {
+          return (
+            <em key={index} className="not-italic text-gradient-gold">
+              {part}
+            </em>
+          );
+        }
+        return part;
+      })}
+    </>
+  );
+}
+
 export function SectionHeading({
   eyebrow,
   title,
@@ -26,7 +44,7 @@ export function SectionHeading({
           light ? "text-white" : "text-foreground"
         }`}
       >
-        {title}
+        {typeof title === "string" ? formatTitle(title) : title}
       </h2>
       <div className="om-divider mt-6">
         <span className={`text-lg ${light ? "text-accent" : "text-primary"}`}>ॐ</span>

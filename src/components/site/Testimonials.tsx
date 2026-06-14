@@ -25,14 +25,7 @@ export function Testimonials() {
   return (
     <section className="py-28 bg-background overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <SectionHeading
-          eyebrow={t("testimonials.eyebrow")}
-          title={
-            <>
-              Words from our <em className="not-italic text-gradient-gold">Pilgrims</em>
-            </>
-          }
-        />
+        <SectionHeading eyebrow={t("testimonials.eyebrow")} title={t("testimonials.title")} />
         <div className="mt-20 grid md:grid-cols-3 gap-6">
           {reviews.map((r, i) => (
             <figure

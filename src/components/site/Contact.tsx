@@ -19,11 +19,7 @@ export function Contact() {
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("contact.eyebrow")}
-          title={
-            <>
-              Begin Your <em className="not-italic text-gradient-gold">Yatra</em>
-            </>
-          }
+          title={t("contact.title")}
           subtitle={t("contact.subtitle")}
         />
 
@@ -115,7 +111,7 @@ export function Contact() {
                 setLoading(false);
               }
             }}
-            className="reveal lg:col-span-3 bg-card rounded-2xl p-8 border border-border shadow-soft space-y-5 min-w-0"
+            className="reveal lg:col-span-3 bg-card rounded-2xl p-5 xs:p-8 border border-border shadow-soft space-y-5 min-w-0"
             aria-label={t("contact.title")}
           >
             <div className="grid sm:grid-cols-2 gap-5">

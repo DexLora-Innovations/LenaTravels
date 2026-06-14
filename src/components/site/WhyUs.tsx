@@ -25,9 +25,9 @@ export function WhyUs() {
             loading="lazy"
             width={1024}
             height={1280}
-            className="relative rounded-3xl shadow-soft w-full h-[600px] object-cover"
+            className="relative rounded-3xl shadow-soft w-full h-[320px] sm:h-[450px] lg:h-[600px] object-cover"
           />
-          <div className="absolute -bottom-8 -right-8 bg-card rounded-2xl p-6 border border-border shadow-glow max-w-xs">
+          <div className="absolute bottom-4 right-4 sm:-bottom-8 sm:-right-8 bg-card rounded-2xl p-6 border border-border shadow-glow max-w-xs">
             <Sparkles className="h-6 w-6 text-accent" />
             <p className="mt-3 font-display text-xl text-foreground">{t("whyus.lifetime")}</p>
             <p className="mt-1 text-xs text-muted-foreground">{t("whyus.trusted")}</p>
@@ -35,14 +35,7 @@ export function WhyUs() {
         </div>
 
         <div>
-          <SectionHeading
-            eyebrow={t("whyus.eyebrow")}
-            title={
-              <>
-                The Difference of <em className="not-italic text-gradient-gold">Devotion</em>
-              </>
-            }
-          />
+          <SectionHeading eyebrow={t("whyus.eyebrow")} title={t("whyus.title")} />
           <ul className="mt-12 space-y-4">
             {reasons.map((r, i) => (
               <li

@@ -48,7 +48,7 @@ function Card({ card }: { card: PackageCard }) {
         if (!alwaysActive) setHovered(false);
       }}
       className={[
-        "relative rounded-3xl p-8 sm:p-10 border h-full flex flex-col",
+        "relative rounded-3xl p-5 xs:p-8 sm:p-10 border h-full flex flex-col",
         "transition-[background-color,border-color,box-shadow,color]",
         "duration-[350ms] ease-in-out",
         "will-change-auto",
@@ -164,11 +164,7 @@ export function PackageSection() {
       <div className="relative max-w-6xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("package.eyebrow")}
-          title={
-            <>
-              Kashi Yatra <em className="not-italic text-gradient-gold">Sacred Package</em>
-            </>
-          }
+          title={t("package.title")}
           subtitle={t("package.subtitle")}
         />
 

@@ -64,11 +64,7 @@ export function Destinations() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("dest.eyebrow")}
-          title={
-            <>
-              Where <em className="not-italic text-gradient-gold">Souls</em> Find Peace
-            </>
-          }
+          title={t("dest.title")}
           subtitle={t("dest.subtitle")}
         />
 

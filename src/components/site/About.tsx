@@ -16,11 +16,7 @@ export function About() {
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <SectionHeading
           eyebrow={t("about.eyebrow")}
-          title={
-            <>
-              Devoted to Your <em className="not-italic text-gradient-gold">Sacred Journey</em>
-            </>
-          }
+          title={t("about.title")}
           subtitle={t("about.subtitle")}
         />
 

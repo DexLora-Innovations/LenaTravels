@@ -19,14 +19,8 @@ import dliLogo from "@/assets/dli-logo.jpg";
  */
 export function SplashScreen() {
   const [phase, setPhase] = useState<"entering" | "visible" | "leaving" | "gone">("entering");
-  const started = useRef(false);
 
   useEffect(() => {
-    // StrictMode guard: only run once per true mount
-    if (started.current) return;
-    started.current = true;
-
-    // Phase: entering → visible (after CSS animation completes ~700ms)
     const visibleTimer = window.setTimeout(() => setPhase("visible"), 700);
 
     // Phase: visible → leaving (start fade-out at 2500ms total)
