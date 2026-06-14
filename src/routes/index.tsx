@@ -48,27 +48,32 @@ function Index() {
     // or on revisit. We always want the page to open at the top (Hero section).
     try {
       if ("scrollRestoration" in history) history.scrollRestoration = "manual";
-    } catch (e) {
+    } catch {
       /* ignore */
     }
-    // Immediately reset scroll position — runs synchronously before paint
-    try {
-      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-    } catch (e) {
+
+    /**
+     * Instant scroll-to-top helper.
+     * We temporarily disable CSS scroll-behavior:smooth so the reset snaps
+     * immediately rather than animating from wherever the browser last was.
+     */
+    const snapToTop = () => {
       try {
+        document.documentElement.setAttribute("data-scroll-instant", "1");
         window.scrollTo(0, 0);
-      } catch (e) {
-        /* ignore */
-      }
-    }
-    // Belt-and-suspenders: also reset after the splash screen has removed itself
-    const t = window.setTimeout(() => {
-      try {
-        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        requestAnimationFrame(() => {
+          document.documentElement.removeAttribute("data-scroll-instant");
+        });
       } catch {
         /* ignore */
       }
-    }, 3100);
+    };
+
+    // Immediate reset on mount
+    snapToTop();
+
+    // Belt-and-suspenders: also reset after the splash has fully exited (3s)
+    const t = window.setTimeout(snapToTop, 3100);
     return () => window.clearTimeout(t);
   }, []);
   return (

@@ -128,6 +128,10 @@
   html {
     scroll-behavior: smooth;
   }
+  /* Allow JS to override scroll-behavior to 'auto' for instant resets */
+  html[data-scroll-instant] {
+    scroll-behavior: auto;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -282,6 +286,29 @@
   }
 }
 
+/* ═══════════════════════════════════════════════════════════════════════════
+   SPLASH SCREEN
+   ───────────────────────────────────────────────────────────────────────────
+   Glitch-free design principles applied here:
+
+   1. The overlay itself fades IN via splash-bg-enter (400ms) so there is
+      never a jarring "snap to black" on first paint.
+
+   2. The content fades in 100ms AFTER the background so they don't race.
+
+   3. Exit uses opacity-only transition (no visibility). visibility:hidden
+      caused a single-frame jump to transparent on some WebKit builds.
+      React unmounts the element after the transition, so visibility is
+      not needed for accessibility — aria-hidden handles that.
+
+   4. will-change:opacity is set so the GPU composites the layer before the
+      animation starts, preventing the "first-frame white flash" seen on
+      mobile Safari when a fixed overlay is created mid-paint.
+
+   5. contain:strict prevents any reflow from the rest of the page leaking
+      into the overlay during its lifetime.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
 .splash-screen {
   position: fixed;
   inset: 0;
@@ -303,16 +330,20 @@
       color-mix(in oklab, var(--primary) 38%, var(--foreground)) 58%,
       var(--foreground)
     );
-  opacity: 1;
-  transition:
-    opacity 500ms ease,
-    visibility 500ms ease;
-  visibility: visible;
+  /* Start transparent — fade IN via animation so first paint is never jarring */
+  opacity: 0;
+  will-change: opacity;
+  contain: strict;
+  /* Transition used only for the EXIT fade-out (triggered by --leaving class) */
+  transition: opacity 500ms ease;
+  /* The entrance animation brings opacity from 0 → 1 */
+  animation: splash-bg-enter 400ms ease-out forwards;
 }
 
 .splash-screen--leaving {
+  /* Override the forwards fill so the exit transition takes over */
+  animation: none;
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
 }
 
@@ -322,7 +353,9 @@
   align-items: center;
   gap: clamp(1rem, 2.5vw, 1.5rem);
   text-align: center;
-  animation: splash-enter 700ms ease-out both;
+  /* Content enters 100ms after the background so they never race */
+  animation: splash-content-enter 600ms 100ms ease-out both;
+  will-change: opacity, transform;
 }
 
 .splash-screen__logo {
@@ -332,6 +365,9 @@
   object-fit: contain;
   border-radius: 0.75rem;
   box-shadow: 0 28px 80px -32px color-mix(in oklab, var(--gold) 72%, transparent);
+  /* Prevent layout shift while image loads: reserve space using the declared
+     width/height attributes (1536×1024 → 3:2 aspect ratio) */
+  aspect-ratio: 3 / 2;
 }
 
 .splash-screen__text {
@@ -343,10 +379,19 @@
   text-transform: uppercase;
 }
 
-@keyframes splash-enter {
+@keyframes splash-bg-enter {
   from {
     opacity: 0;
-    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes splash-content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.97);
   }
   to {
     opacity: 1;
@@ -355,9 +400,16 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .splash-screen,
+  .splash-screen {
+    animation: none;
+    opacity: 1;
+    transition: none;
+  }
   .splash-screen__content {
     animation: none;
+  }
+  .splash-screen--leaving {
+    opacity: 0;
     transition: none;
   }
 }
